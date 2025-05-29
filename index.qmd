@@ -1,7 +1,7 @@
 ---
-title: "Harnessing Analysis Results Datasets (ARD) for Clinical Reporting in R"
-subtitle: "Our First ARD-Based Filing Experience"
-author: "Daniel D. Sjoberg, Nolan Steed"
+title: "Supercharging Statistical Analysis with ARDs and the {cards} R Package"
+subtitle: "Enhancing Automation, Traceability, and Reliability in Your Statistical Workflow."
+author: "Becca Krouse and Davide Garolini, GSK/Roche"
 engine: knitr
 editor: 
   markdown: 
@@ -10,11 +10,11 @@ editor:
 
 ------------------------------------------------------------------------
 
-🗓️ Tuesday March 18, 2025  \| 12:00 - 12:30PM EDT
+🗓️ Thursday June 12, 2025  \| 1:01 - 1:21PM EDT
 
-🏢 Renaissance Orlando at SeaWorld
+🏢 Virtual Conference
 
-💥 FREE for [PHUSE US Connect 2025](https://www.phuse-events.org/attend/frontend/reg/thome.csp?pageID=38599&ef_sel_menu=2971&eventID=61) Attendees!
+💥 FREE for [R/medicine 2025](https://rconsortium.github.io/RMedicine_website/abstracts.html#cards-package) Attendees!
 
 ------------------------------------------------------------------------
 
@@ -38,33 +38,23 @@ We believe that this approach will become increasingly essential for ensuring th
 
 ## Biography
 
-![](images/dan-circle.png){style="float:left;padding: 0 10px 0 0;"
-fig-alt="Headshot of Daniel Sjoberg" width="150"}
+![](images/becca.png){style="float:left;padding: 0 20px 0 20px;"
+fig-alt="Headshot of Becca Krouse" width="140"}
 
-[**Daniel D. Sjoberg**](https://www.danieldsjoberg.com/) (he/him) is a
-Senior Principal Data Scientist at Genentech. Previously, he was a Lead
-Data Science Manager at the Prostate Cancer Clinical Trials Consortium,
-and a Senior Biostatistician at Memorial Sloan Kettering Cancer Center
-in New York City. He enjoys R package development, creating many
-packages available on [CRAN](https://cran.r-project.org/web/packages/),
-[R-Universe](https://ddsjoberg.r-universe.dev/ui#packages), and
-[GitHub](https://github.com/ddsjoberg). He's a co-organizer of 
-[rainbowR](https://rainbowr.netlify.app/) (a community that supports, promotes 
-and connects LGBTQ+ people who code in the R language) and of the [R Medicine Conference](https://rconsortium.github.io/RMedicine_website/). 
-His research interests include
-adaptive methods in clinical trials, precision medicine, and predictive
-modeling. Daniel is the winner of the 2021 American Statistical
-Association (ASA) Innovation in Statistical Programming and Analytics
-award.
+**Becca Krouse** is a data scientist in GSK's Statistics and Data
+Science Innovation Hub. A biostatistician by training, she has
+experience spanning 14+ years in the field of clinical research and
+specializes in developing R-based tools.
 
 [`r fontawesome::fa("link", fill = "#606060")`](https://www.danieldsjoberg.com/)
 [`r fontawesome::fa("bluesky", fill = "#606060")`](https://bsky.app/profile/ddsjoberg.bsky.social)
 [`r fontawesome::fa("linkedin", fill = "#606060")`](https://www.linkedin.com/in/ddsjoberg/)
 [`r fontawesome::fa("github", fill = "#606060")`](https://github.com/ddsjoberg/)
 
-![](images/nolan-circle.png){style="float:left; padding: 0 10px 0 0;"fig-alt="Headshot of Nolan Steed" width="150"}
+![](images/Davide_Garolini-PH.png){style="float:left;padding: 0 10px 0 0;" fig-alt="Headshot of Davide Garolini" width="150"}
 
-Nolan Steed (he/him) is a Senior Data Scientist at Denali Therapeutics, and previously worked as a Data Scientist at Hoffmann-La-Roche.
-He has a passion for developing and using open source tools to help bring therapies to patients; he is a contributor to the package [{tern}](https://github.com/insightsengineering/tern) R package, which is a part of the [Pharamverse](https://pharmaverse.org).
+[**Davide Garolini**](https://www.linkedin.com/in/davidegarolini/) (he/his) is a Statistical Engineer with an M.Phys. in Biophysics and a Ph.D. in Computational Neuroscience, has over ten years of R programming and package development expertise, specializing in clinical data analysis and regulatory deliveries. He significantly contributes by improving key tools like {rtables}, {tern}, and {gtsummary} for regulatory compliance. Davide strongly advocates for open-source collaboration, promoting advancements in clinical research.
 
-[`r fontawesome::fa("linkedin", fill = "#606060")`](https://www.linkedin.com/in/nolan-steed9)
+
+[`r fontawesome::fa("linkedin", fill = "#606060")`](https://ch.linkedin.com/in/davidegarolini)
+[`r fontawesome::fa("github", fill = "#606060")`](https://github.com/Melkiades/)

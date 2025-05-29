@@ -7,8 +7,8 @@ project:
 
 website:
   page-navigation: true
-  title: "Harnessing Analysis Results Datasets (ARD) for Clinical Reporting in R"
-  description: "2025 PHUSE US Connect Talk"
+  title: "Supercharging Statistical Analysis with ARDs and the {cards} R Package"
+  description: "2025 R/Medicine"
   favicon: "images/cards-cardx-gtsummary-hex.png"
 
   repo-url: https://github.com/ddsjoberg/ARD-PHUSE-talk-2025
@@ -25,7 +25,7 @@ website:
     align: center
     tools:
       - icon: github
-        href: https://github.com/ddsjoberg/ARD-PHUSE-talk-2025
+        href: https://github.com/Melkiades/ARD_rmedicine25
         text: GitHub
     style: docked
     contents:
