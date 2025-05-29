@@ -42,10 +42,12 @@ _How can we have reproducible results when there are so many layouts and formats
 ## Analysis Results Standard (ARS)
 
 A standard for machine-readable statistical results.
+
  - **Goal**: To improve the quality and efficiency of clinical reporting.
  - **Enables**: Automation, Reproducibility, Reusability, and Traceability.
  
 Separates the result from the presentation.
+
  - An ARS contains the statistical outcome (e.g., a mean of 25.3).
  - It does not contain display instructions (e.g., font size or cell color). This allows for maximum flexibility.
 
