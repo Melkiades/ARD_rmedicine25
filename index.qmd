@@ -20,13 +20,7 @@ editor:
 
 ## Abstract
 
-We present a pioneering application of the Analysis Results Dataset (ARD) framework for preparing a clinical trial readout.
-By leveraging open-source R packages, we have demonstrated a streamlined and reproducible approach to generating comprehensive trial results.
-The newly released {cards} package developed by Roche, GSK, and Novartis builds ARDs, which can be seamlessly and robustly be converted into visually appealing tables utilizing the {gtsummary} package.
-The recent integration of ARD functionality into {gtsummary}, the most popular package for summary tables in the R ecosystem, marks a significant advancement for pharmaceutical companies.
-This integration underscores the growing importance of ARD as a standardized format for representing statistical analysis results.
-Our experience preparing a health authority filing highlights the benefits of using ARDs, including improved automation, reproducibility, reusability, and traceability.
-We believe that this approach will become increasingly essential for ensuring the quality and efficiency of clinical trial reporting.
+We present a pioneering application of the Analysis Results Dataset (ARD) framework for preparing clinical trial readouts. By leveraging open-source R packages, we demonstrate a streamlined and reproducible approach to generate comprehensive trial results. Our experience preparing a health authority filing highlights the consequences of non-standard Analysis Results readouts and storage. The newly released {cards} package developed by Roche, GSK, and Novartis, builds ARDs, which can be seamlessly and robustly converted into visually appealing tables, utilizing the {gtsummary} package. The recent integration of ARD functionality into {gtsummary} (the most popular package for summary tables in the R ecosystem), marks a significant advancement for pharmaceutical companies. This integration underscores the growing importance of ARD as a standardized format for representing statistical analysis results, including improved automation, reproducibility, reusability, and traceability. We believe that this approach will become increasingly essential for ensuring the quality and efficiency of clinical trial reporting.
 
 ## Slides
 

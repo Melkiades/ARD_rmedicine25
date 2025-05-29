@@ -37,7 +37,17 @@ title-slide-attributes:
 
 ![](images/ars-flow.png){fig-align="center"}
 
-![](images/ars-objectives.png){.fragment fig-align="center"}
+_How can we have reproducible results when there are so many layouts and formats?_
+
+## Analysis Results Standard (ARS)
+
+A standard for machine-readable statistical results.
+ - **Goal**: To improve the quality and efficiency of clinical reporting.
+ - **Enables**: Automation, Reproducibility, Reusability, and Traceability.
+ 
+Separates the result from the presentation.
+ - An ARS contains the statistical outcome (e.g., a mean of 25.3).
+ - It does not contain display instructions (e.g., font size or cell color). This allows for maximum flexibility.
 
 ## CDISC's Analysis Results Standard (ARS)
 
@@ -53,15 +63,6 @@ title-slide-attributes:
 
 - {gtsummary} is the engine for summary tables
 
-## Analysis Results Data (ARD)
-
-A standard for machine-readable statistical results.
- - **Goal**: To improve the quality and efficiency of clinical reporting.
- - **Enables**: Automation, Reproducibility, Reusability, and Traceability.
- 
-Separates the result from the presentation.
- - An ARD contains the statistical outcome (e.g., a mean of 25.3).
- - It does not contain display instructions (e.g., font size or cell color). This allows for maximum flexibility.
 
 ## Analysis Results Data (ARD)
 
