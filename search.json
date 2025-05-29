@@ -11,7 +11,14 @@
     "href": "slides/index.html#cdiscs-analysis-results-standard-ars",
     "title": "Supercharging Statistical Analysis with ARDs and the {cards} R Package",
     "section": "CDISC’s Analysis Results Standard (ARS)",
-    "text": "CDISC’s Analysis Results Standard (ARS)"
+    "text": "CDISC’s Analysis Results Standard (ARS)\n\nHow can we have reproducible results when there are so many layouts and formats?"
+  },
+  {
+    "objectID": "slides/index.html#analysis-results-standard-ars",
+    "href": "slides/index.html#analysis-results-standard-ars",
+    "title": "Supercharging Statistical Analysis with ARDs and the {cards} R Package",
+    "section": "Analysis Results Standard (ARS)",
+    "text": "Analysis Results Standard (ARS)\nA standard for machine-readable statistical results.\n\nGoal: To improve the quality and efficiency of clinical reporting.\nEnables: Automation, Reproducibility, Reusability, and Traceability.\n\nSeparates the result from the presentation.\n\nAn ARS contains the statistical outcome (e.g., a mean of 25.3).\nIt does not contain display instructions (e.g., font size or cell color). This allows for maximum flexibility."
   },
   {
     "objectID": "slides/index.html#cdiscs-analysis-results-standard-ars-1",
@@ -30,13 +37,6 @@
   {
     "objectID": "slides/index.html#analysis-results-data-ard",
     "href": "slides/index.html#analysis-results-data-ard",
-    "title": "Supercharging Statistical Analysis with ARDs and the {cards} R Package",
-    "section": "Analysis Results Data (ARD)",
-    "text": "Analysis Results Data (ARD)\nA standard for machine-readable statistical results. - Goal: To improve the quality and efficiency of clinical reporting. - Enables: Automation, Reproducibility, Reusability, and Traceability.\nSeparates the result from the presentation. - An ARD contains the statistical outcome (e.g., a mean of 25.3). - It does not contain display instructions (e.g., font size or cell color). This allows for maximum flexibility."
-  },
-  {
-    "objectID": "slides/index.html#analysis-results-data-ard-1",
-    "href": "slides/index.html#analysis-results-data-ard-1",
     "title": "Supercharging Statistical Analysis with ARDs and the {cards} R Package",
     "section": "Analysis Results Data (ARD)",
     "text": "Analysis Results Data (ARD)\n\nAfter the initial creation of an ARD, the results can later be re-used again and again for subsequent reporting needs."
@@ -245,7 +245,7 @@
     "href": "index.html#abstract",
     "title": "Supercharging Statistical Analysis with ARDs and the {cards} R Package",
     "section": "Abstract",
-    "text": "Abstract\nWe present a pioneering application of the Analysis Results Dataset (ARD) framework for preparing a clinical trial readout. By leveraging open-source R packages, we have demonstrated a streamlined and reproducible approach to generating comprehensive trial results. The newly released {cards} package developed by Roche, GSK, and Novartis builds ARDs, which can be seamlessly and robustly be converted into visually appealing tables utilizing the {gtsummary} package. The recent integration of ARD functionality into {gtsummary}, the most popular package for summary tables in the R ecosystem, marks a significant advancement for pharmaceutical companies. This integration underscores the growing importance of ARD as a standardized format for representing statistical analysis results. Our experience preparing a health authority filing highlights the benefits of using ARDs, including improved automation, reproducibility, reusability, and traceability. We believe that this approach will become increasingly essential for ensuring the quality and efficiency of clinical trial reporting.",
+    "text": "Abstract\nWe present a pioneering application of the Analysis Results Dataset (ARD) framework for preparing clinical trial readouts. By leveraging open-source R packages, we demonstrate a streamlined and reproducible approach to generate comprehensive trial results. Our experience preparing a health authority filing highlights the consequences of non-standard Analysis Results readouts and storage. The newly released {cards} package developed by Roche, GSK, and Novartis, builds ARDs, which can be seamlessly and robustly converted into visually appealing tables, utilizing the {gtsummary} package. The recent integration of ARD functionality into {gtsummary} (the most popular package for summary tables in the R ecosystem), marks a significant advancement for pharmaceutical companies. This integration underscores the growing importance of ARD as a standardized format for representing statistical analysis results, including improved automation, reproducibility, reusability, and traceability. We believe that this approach will become increasingly essential for ensuring the quality and efficiency of clinical trial reporting.",
     "crumbs": [
       "Home"
     ]
