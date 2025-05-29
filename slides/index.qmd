@@ -1,9 +1,9 @@
 ---
-title: "Harnessing Analysis Results Datasets (ARD) for Clinical Reporting in R"
-subtitle: "Our First ARD-Based Filing Experience"
-author: "Daniel D. Sjoberg, Nolan Steed"
+title: "Supercharging Statistical Analysis with ARDs and the {cards} R Package"
+subtitle: "Enhancing Automation, Traceability, and Reliability in Your Statistical Workflow."
+author: "Becca Krouse and Davide Garolini, GSK/Roche"
 logo: "images/cards-cardx-gtsummary-hex.png"
-footer: "[www.danieldsjoberg.com/ARD-PHUSE-talk-2025/](https://www.danieldsjoberg.com/ARD-PHUSE-talk-2025/)"
+footer: "[https://github.com/Melkiades/ARD_rmedicine25](https://github.com/Melkiades/ARD_rmedicine25)"
 editor: source
 format: 
   revealjs: 
@@ -55,13 +55,13 @@ title-slide-attributes:
 
 ## Analysis Results Data (ARD)
 
--   Encodes statistical analysis outcomes in a machine-readable format.
-
--   The ARD model specifies how statistical results are saved into a structured format.
-
--   The ARD can be used to to subsequently create tables and figures.
-
--   The ARD does *not* describe the layout of the results
+A standard for machine-readable statistical results.
+ - **Goal**: To improve the quality and efficiency of clinical reporting.
+ - **Enables**: Automation, Reproducibility, Reusability, and Traceability.
+ 
+Separates the result from the presentation.
+ - An ARD contains the statistical outcome (e.g., a mean of 25.3).
+ - It does not contain display instructions (e.g., font size or cell color). This allows for maximum flexibility.
 
 ## Analysis Results Data (ARD)
 
