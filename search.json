@@ -81,7 +81,7 @@
     "href": "slides/index.html#cardx",
     "title": "Supercharging Statistical Analysis with ARDs and the {cards} R Package",
     "section": "{cardx}",
-    "text": "{cardx}\n\nExtension of the {cards} package, providing additional functions to create Analysis Results Datasets (ARDs)\nThe {cardx} package exports many ard_*() function for statistical methods."
+    "text": "{cardx}\n\nExtension of the {cards} package, providing additional functions to create Analysis Results Datasets (ARDs).\nThe {cardx} package exports many ard_*() function for statistical methods."
   },
   {
     "objectID": "slides/index.html#cardx-1",
@@ -95,7 +95,7 @@
     "href": "slides/index.html#section",
     "title": "Supercharging Statistical Analysis with ARDs and the {cards} R Package",
     "section": "",
-    "text": "How it started\n\n\nBegan to address reproducible issues while working in academia\nGoal was to build a package to summarize study results with code that was both simple and customizable\nFirst release in May 2019\n\n\n\nHow it’s going\n\n\nThe stats\n\n1,300,000+ installations from CRAN\n1100+ GitHub stars\n300+ contributors\n50+ code contributors"
+    "text": "How it started\n\n\nBegan to address reproducible issues while working in academia\nGoal was to build a package to summarize study results with code that was both simple and customizable\nFirst release in May 2019\n\n\n\nHow it’s going\n\n\nThe stats\n\n1,500,000+ installations from CRAN\n1100+ GitHub stars\n300+ contributors\n50+ code contributors"
   },
   {
     "objectID": "slides/index.html#section-1",
@@ -137,35 +137,28 @@
     "href": "slides/index.html#our-ard-based-pilot",
     "title": "Supercharging Statistical Analysis with ARDs and the {cards} R Package",
     "section": "Our ARD-based Pilot",
-    "text": "Our ARD-based Pilot\n\nWe wanted to dip our toes into CDISC’s Analysis Results Standard (ARS)\n\nWe did not try to implement the full model, just getting a taste\nUsing some metadata to drive the creation of TLGs\nUsing an ARD-first approach to create our TLGs, e.g. using the {cards} R package to create ARDs, and the {gtsummary} package for tables\n\nReport on our experience! What would we change if we were to do it again?"
+    "text": "Our ARD-based Pilot\n\nWe wanted to dip our toes into CDISC’s Analysis Results Standard (ARS)\n\nWe did not try to implement the full model, just getting a taste\nUsing some metadata to drive the creation of TLGs\nUsing an ARD-first approach to create our TLGs, e.g. using the {cards} R package to create ARDs, and the {gtsummary} package for tables"
   },
   {
     "objectID": "slides/index.html#what-we-liked",
     "href": "slides/index.html#what-we-liked",
     "title": "Supercharging Statistical Analysis with ARDs and the {cards} R Package",
     "section": "What we liked!",
-    "text": "What we liked!\n\nUsing {cards}+{cardx}+{gtsummary}, we created every summary for a trial read-out. 🕺🕺🕺\nThese tools are general to allow us to create any table needed, whether it was a table of simple counts or complex statistical results.\nNolan was the primary statistical programmer for this study.\n\nWe did not have time for proper training on the new {cards} and {cardx} packages, nor for the {gtsummary} package.\nDespite no training, he was quickly able to pick up the packages and immediately begin using, which we attribute to the intuitive user interface. 🚀"
+    "text": "What we liked!\n\nUsing {cards}+{cardx}+{gtsummary}, we created every summary for a trial read-out. 🕺🕺🕺\nIntuitive design was a key factor in its adoption, even when no training was provided."
   },
   {
     "objectID": "slides/index.html#what-we-liked-1",
     "href": "slides/index.html#what-we-liked-1",
     "title": "Supercharging Statistical Analysis with ARDs and the {cards} R Package",
     "section": "What we liked!",
-    "text": "What we liked!\n\nWe loved the ARD-based results, which made QC simple and straightforward.\n\nA highly structured data frame of results is straightforward to QC compared to a summary table or figure.\n\nThe ARDs make re-use of the results simple as well.\nAs long as we have both the ARD and the table/figure, we are happy with whatever order they are created."
+    "text": "What we liked!\n\nWe loved the ARD-based results, which made:\n\nQC easy and straightforward.\nunformatted results easy to re-purpose for different reporting needs.\n\nAs long as we have both the ARD and the table/figure, we are happy with whatever order they are created."
   },
   {
     "objectID": "slides/index.html#what-we-would-do-differently",
     "href": "slides/index.html#what-we-would-do-differently",
     "title": "Supercharging Statistical Analysis with ARDs and the {cards} R Package",
     "section": "What we would do differently?",
-    "text": "What we would do differently?\n\nAs {gtsummary} runs on ARDs, we found the requirement of creating the ARD first, then using it to create the summary table more complex than the process needed to be.\n\nARDs can be extracted directly from any {gtsummary} and in many cases it is sufficient to create the table directly and take the ARD from the table object."
-  },
-  {
-    "objectID": "slides/index.html#what-we-would-do-differently-1",
-    "href": "slides/index.html#what-we-would-do-differently-1",
-    "title": "Supercharging Statistical Analysis with ARDs and the {cards} R Package",
-    "section": "What we would do differently?",
-    "text": "What we would do differently?\n\nThe full ARS model is metadata driven. This also means the metadata dictate the precise layout of the tables.\nWe preferred to write an R script for the persnickety formatting, rather than making those specifications in a metadata format.\n\nIf a trial only reported “standard” tables, it would be much less of an issue to specify detailed meta data for layouts. But every trial (and in particular this pilot) has many bespoke tables not part of a standard library.\n\nWe were still able to take advantage of the ARS attributes, such as tracability, re-use, and automation."
+    "text": "What we would do differently?\n\nThe full ARS model is metadata driven. This also means the metadata dictate the precise layout of the tables.\nWe preferred to write an R script for the persnickety formatting, rather than making those specifications in a metadata format.\n\nIf a trial only reported “standard” tables, it would be much less of an issue to specify detailed meta data for layouts. But every trial (and in particular this pilot) has many bespoke tables not part of a standard library.\n\nWe were still able to take advantage of the ARS attributes, such as traceability, re-use, and automation."
   },
   {
     "objectID": "slides/index.html#section-2",
@@ -245,7 +238,7 @@
     "href": "index.html#abstract",
     "title": "Supercharging Statistical Analysis with ARDs and the {cards} R Package",
     "section": "Abstract",
-    "text": "Abstract\nWe present a pioneering application of the Analysis Results Dataset (ARD) framework for preparing clinical trial readouts. By leveraging open-source R packages, we demonstrate a streamlined and reproducible approach to generate comprehensive trial results. Our experience preparing a health authority filing highlights the consequences of non-standard Analysis Results readouts and storage. The newly released {cards} package developed by Roche, GSK, and Novartis, builds ARDs, which can be seamlessly and robustly converted into visually appealing tables, utilizing the {gtsummary} package. The recent integration of ARD functionality into {gtsummary} (the most popular package for summary tables in the R ecosystem), marks a significant advancement for pharmaceutical companies. This integration underscores the growing importance of ARD as a standardized format for representing statistical analysis results, including improved automation, reproducibility, reusability, and traceability. We believe that this approach will become increasingly essential for ensuring the quality and efficiency of clinical trial reporting.",
+    "text": "Abstract\nWe present a pioneering application of the Analysis Results Dataset (ARD) framework for preparing clinical trial readouts. By leveraging open-source R packages, we demonstrate a streamlined and reproducible approach to generate comprehensive trial results. Our experience preparing a health authority filing highlights the consequences of non-standard Analysis Results readouts and storage. The newly released {cards} package developed by Roche, GSK, Novartis, Pfizer, and Eli Lilly builds ARDs, which can be seamlessly and robustly converted into visually appealing tables, utilizing the {gtsummary} package. The recent integration of ARD functionality into {gtsummary} (the most popular package for summary tables in the R ecosystem), marks a significant advancement for pharmaceutical companies. This integration underscores the growing importance of ARD as a standardized format for representing statistical analysis results, including improved automation, reproducibility, reusability, and traceability. We believe that this approach will become increasingly essential for ensuring the quality and efficiency of clinical trial reporting.",
     "crumbs": [
       "Home"
     ]
