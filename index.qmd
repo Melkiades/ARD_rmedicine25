@@ -41,13 +41,14 @@ We present a pioneering application of the Analysis Results Dataset (ARD) framew
 
 ## Biography
 
-![](images/becca.png){style="float:left;padding: 0 20px 0 20px;"
-fig-alt="Headshot of Becca Krouse" width="140"}
+![](images/becca.png){style="float:left;padding: 0 20px 0 20px;"fig-alt="Headshot of Becca Krouse" width="140"}
 
 **Becca Krouse** is a data scientist in GSK's Statistics and Data
 Science Innovation Hub. A biostatistician by training, she has
 experience spanning 14+ years in the field of clinical research and
 specializes in developing R-based tools.
+
+
 
 ![](images/Davide_Garolini-PH.png){style="float:left;padding: 0 10px 0 0;" fig-alt="Headshot of Davide Garolini" width="150"}
 
