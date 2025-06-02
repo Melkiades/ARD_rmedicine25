@@ -32,7 +32,7 @@
     "href": "slides/index.html#cdiscs-analysis-results-standard-ars-2",
     "title": "Supercharging Statistical Analysis with ARDs and the {cards} R Package",
     "section": "CDISC’s Analysis Results Standard (ARS)",
-    "text": "CDISC’s Analysis Results Standard (ARS)\n\n\nThe ARS provides a metadata-driven infrastructure for analysis\n{cards} serves as the engine for the analysis\n{gtsummary} is the engine for summary tables"
+    "text": "CDISC’s Analysis Results Standard (ARS)\n\n\nThe ARS provides a metadata-driven infrastructure for analysis\n{cards} serves as the engine for the analysis\n{gtsummary} is the engine for summary tables display"
   },
   {
     "objectID": "slides/index.html#analysis-results-data-ard",
@@ -74,7 +74,7 @@
     "href": "slides/index.html#cards-other-summary-functions",
     "title": "Supercharging Statistical Analysis with ARDs and the {cards} R Package",
     "section": "{cards}: Other Summary Functions",
-    "text": "{cards}: Other Summary Functions\n\nard_dichotomous(): similar to ard_categorical(), but for dichotomous summaries\nard_hierarchical(): similar to ard_categorical(), but built for nested tabulations, e.g. AE terms within SOC\nard_complex(): similar to ard_continuous(), but the summary functions can be more complex and accepts other arguments like the full and subsetted (within the by groups) data sets.\nard_missing(): tabulates rates of missingness\n\nThe results from all these functions are entirely compatible with one another, and can be stacked into a single data frame. 🥞"
+    "text": "{cards}: Other Summary Functions\n\nard_dichotomous(): similar to ard_categorical(), but for dichotomous summaries.\nard_hierarchical(): similar to ard_categorical(), but built for nested tabulations, e.g. AE terms within SOC.\nard_complex(): similar to ard_continuous(), but the summary functions can be more complex and accepts other arguments like the full and subsetted (within the by groups) data sets.\nard_missing(): tabulates rates of missingness.\n\nThe results from all these functions are entirely compatible with one another, and can be stacked into a single data frame. 🥞"
   },
   {
     "objectID": "slides/index.html#cardx",
@@ -95,7 +95,7 @@
     "href": "slides/index.html#section",
     "title": "Supercharging Statistical Analysis with ARDs and the {cards} R Package",
     "section": "",
-    "text": "How it started\n\n\nBegan to address reproducible issues while working in academia\nGoal was to build a package to summarize study results with code that was both simple and customizable\nFirst release in May 2019\n\n\n\nHow it’s going\n\n\nThe stats\n\n1,500,000+ installations from CRAN\n1100+ GitHub stars\n300+ contributors\n50+ code contributors"
+    "text": "How {gtsummary} started\n\n\nBegan to address reproducible issues while working in academia\nGoal was to build a package to summarize study results with code that was both simple and customizable\nFirst released in May 2019\n\n\n\nHow it’s going\n\n\nThe stats\n\n1,500,000+ installations from CRAN\n1100+ GitHub stars\n300+ contributors\n50+ code contributors"
   },
   {
     "objectID": "slides/index.html#section-1",
@@ -144,21 +144,21 @@
     "href": "slides/index.html#what-we-liked",
     "title": "Supercharging Statistical Analysis with ARDs and the {cards} R Package",
     "section": "What we liked!",
-    "text": "What we liked!\n\nUsing {cards}+{cardx}+{gtsummary}, we created every summary for a trial read-out. 🕺🕺🕺\nIntuitive design was a key factor in its adoption, even when no training was provided."
+    "text": "What we liked!\n\nUsing {cards}+{cardx}+{gtsummary}, we created every summary for a trial read-out. 🕺🕺🕺\nIntuitive design was a key factor in its adoption, even when no prior training was provided."
   },
   {
     "objectID": "slides/index.html#what-we-liked-1",
     "href": "slides/index.html#what-we-liked-1",
     "title": "Supercharging Statistical Analysis with ARDs and the {cards} R Package",
     "section": "What we liked!",
-    "text": "What we liked!\n\nWe loved the ARD-based results, which made:\n\nQC easy and straightforward.\nunformatted results easy to re-purpose for different reporting needs.\n\nAs long as we have both the ARD and the table/figure, we are happy with whatever order they are created."
+    "text": "What we liked!\n\nWe loved the ARD-based results, which made:\n\nQC easy and straightforward.\nre-purpose easy for different reporting needs.\n\nEven after the table creation, it is possible to produce ARDs for the results, which can be used for future reporting needs.\nHence, we were able to take advantage of the ARS attributes, such as traceability, re-use, and automation."
   },
   {
     "objectID": "slides/index.html#what-we-would-do-differently",
     "href": "slides/index.html#what-we-would-do-differently",
     "title": "Supercharging Statistical Analysis with ARDs and the {cards} R Package",
     "section": "What we would do differently?",
-    "text": "What we would do differently?\n\nThe full ARS model is metadata driven. This also means the metadata dictate the precise layout of the tables.\nWe preferred to write an R script for the persnickety formatting, rather than making those specifications in a metadata format.\n\nIf a trial only reported “standard” tables, it would be much less of an issue to specify detailed meta data for layouts. But every trial (and in particular this pilot) has many bespoke tables not part of a standard library.\n\nWe were still able to take advantage of the ARS attributes, such as traceability, re-use, and automation."
+    "text": "What we would do differently?\n\nThe full ARS model is metadata driven. This also means the metadata dictate the precise layout of the tables.\nWe preferred to write an R script than metadata files.\n\nIf a trial only reported “standard” tables, it would be much less of an issue to specify detailed metadata for layouts. But every trial has many bespoke tables not part of a standard library."
   },
   {
     "objectID": "slides/index.html#section-2",
