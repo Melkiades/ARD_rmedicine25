@@ -19,6 +19,7 @@ title-slide-attributes:
   data-background-opacity: "0.15"
 ---
 
+<!-- 1 -->
 ## Today's Plan
 
 -   Discuss our experience using ARD-first approach for TLGs.
@@ -39,6 +40,7 @@ title-slide-attributes:
 
 _How can we have **reproducible** results when there are so many layouts and formats?_
 
+<!-- 2 -->
 ## Analysis Results Standard (ARS)
 
 A standard for machine-readable statistical results.
@@ -50,7 +52,8 @@ Separates the result from the presentation.
 
  - An ARS contains the statistical outcome (e.g., a mean of 25.3).
  - It does not contain display instructions (e.g., font size or cell color). This allows for maximum flexibility.
-
+ 
+<!-- 3 -->
 ## CDISC's Analysis Results Standard (ARS)
 
 ![](images/ars-example-flow2.png){fig-align="center"}
@@ -66,17 +69,18 @@ Separates the result from the presentation.
 - {gtsummary} is the engine for summary tables **display**
 
 
+<!-- 4 -->
 ## Analysis Results Data (ARD)
 
 * After the initial creation of an ARD, the results can later be re-used again and again for subsequent reporting needs.
 
 ![](images/ard-flow.png){fig-align="center"}
 
-
 # ARDs using {cards} 
 
 <a href="https://insightsengineering.github.io/cards/"><img src="https://insightsengineering.github.io/cards/latest-tag/logo.png" align="center" height="300" alt="cards website" /></a>
 
+<!-- 5 -->
 ## {cards}: Introduction
 
 ::: {.larger}
@@ -91,6 +95,7 @@ Separates the result from the presentation.
 
 :::
 
+<!-- 6 -->
 ## What does an ARD look like?
 
 ```{r}
@@ -104,10 +109,8 @@ ADSL |>
   )
 ```
 
-
+<!-- 7 -->
 ## What does an ARD look like?
-
-- We just saw the default statistics returned in the previous example
 
 - It's simple to pass _any_ function to `ard_continuous()` (base R functions, functions from other package, user-defined functions, etc.)
 
@@ -122,6 +125,7 @@ ADSL |>
   )
 ```
 
+<!-- 8 -->
 ## {cards}: `ard_categorical()`
 
 ```{r}
@@ -135,24 +139,14 @@ ADSL |>
 
 ::: {.small}
 
-_Any unobserved levels of the variables appear in the ARD._
+Other Summary Functions: `ard_dichotomous()`, `ard_hierarchical()`, `ard_complex()`, and `ard_missing()` - they can be **stacked** into a single data frame. 🥞
 
 :::
 
-## {cards}: Other Summary Functions 
-
-- `ard_dichotomous()`: similar to `ard_categorical()`, but for dichotomous summaries.
-
-- `ard_hierarchical()`: similar to `ard_categorical()`, but built for nested tabulations, e.g. AE terms within SOC.
-
-- `ard_complex()`: similar to `ard_continuous()`, but the summary functions can be more complex and accepts other arguments like the full and subsetted (within the by groups) data sets.
-
-- `ard_missing()`: tabulates rates of missingness.
-
-The results from all these functions are entirely compatible with one another, and can be **stacked** into a single data frame. 🥞
 
 # {cardx} (read: extra cards)
 
+<!-- 9 -->
 ## {cardx}
 
 -   Extension of the {cards} package, providing additional functions to create Analysis Results Datasets (ARDs).
@@ -161,12 +155,12 @@ The results from all these functions are entirely compatible with one another, a
 
 ![](images/cards-cardx-hex.png){fig-alt="cards and cardx package logos" fig-align="center"}
 
+<!-- 10 -->
 ## {cardx}
 
 -   Exports ARD frameworks for statistical analyses from many packages 
 
 ::: {.larger}
-
       - {stats}
       - {car}
       - {effectsize}
@@ -177,27 +171,26 @@ The results from all these functions are entirely compatible with one another, a
       - {smd}
       - {survey}
       - {survival}
-
 :::
 
 -   This list is growing (rather quickly) 🌱
 
 ::: aside
 
-{cards} provides a general framework to easily implement _any_ method. {cardx} provides a nicer user experience for common methods.
+with {cards} you can easily implement _any_ method.
 
 :::
 
 # From ARDs to tables with {gtsummary}
 
-## ARDs can be used by {gtsummary} for tables!
+<!-- 11 -->
+## {gtsummary} in a (stat) nutshell
 
 ::::::::: columns
 :::::: {.column width="60%"}
 
 ::: small
--   Some stats
-
+    -   {gtsummary} is one of the most popular packages for creating summary tables in the R ecosystem
     -   [1,500,000+ installations]{.emphasis} from CRAN
     -   1100+ GitHub stars
     -   300+ contributors
@@ -212,15 +205,16 @@ The results from all these functions are entirely compatible with one another, a
 ::::
 :::::::::
 
-
+<!-- 12 -->
 ## [{gtsummary} runs on ARDs!]{style="text-decoration: underline;"}
 
 ![](images/ARD-gtsummary-example.png)
 
+<!-- 13 -->
 ## Demographics Example
 
 ```{r}
-#| code-line-numbers: "|4-9|10|11"
+#| code-line-numbers: "|4-9|"
 library(gtsummary)
 
 tbl <- dplyr::filter(pharmaverseadam::adsl, SAFFL == "Y") |> 
@@ -235,6 +229,7 @@ tbl <- dplyr::filter(pharmaverseadam::adsl, SAFFL == "Y") |>
 tbl
 ```
 
+<!-- 14 -->
 ## Demographics Example
 
 - Extract the ARD from the table object
@@ -244,10 +239,11 @@ tbl
 gather_ard(tbl) |> purrr::pluck("tbl_summary")
 ```
 
+<!-- 15 -->
 ## Demographics Example: ARD-first
 
 ```{r}
-#| code-line-numbers: "|2-6|7-12|13"
+#| code-line-numbers: "|2-6|7-12|"
 dplyr::filter(pharmaverseadam::adsl, SAFFL == "Y") |> 
   cards::ard_stack(
     .by = TRT01A, .overall = TRUE, .attributes = TRUE,
@@ -263,7 +259,7 @@ dplyr::filter(pharmaverseadam::adsl, SAFFL == "Y") |>
   add_stat_label()
 ```
 
-
+<!-- 16 -->
 # Our Pilot
 
 ## Our ARD-based Pilot
@@ -292,14 +288,14 @@ dplyr::filter(pharmaverseadam::adsl, SAFFL == "Y") |>
 - Even after the table creation, it is possible to produce ARDs for the results, which can be used for future reporting needs.
 
 - Hence, we were able to take advantage of the ARS attributes, such as traceability, re-use, and automation.
-
+<!-- 17 -->
 ## What we would do differently?
 
-- The full ARS model is metadata driven. This also means the metadata dictate the precise layout of the tables.
+- The full ARS model is metadata driven - the metadata dictate the layout of the tables.
 
-- We preferred to write an R script than metadata files.
+- Non-"standard" tables can be problematic when we use metadata for layouts.
 
-    - If a trial only reported "standard" tables, it would be much less of an issue to specify detailed metadata for layouts. But every trial has many bespoke tables not part of a standard library.
+- R scripts are better to handle than metadata files.
 
 ## 
 
