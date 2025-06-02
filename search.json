@@ -67,7 +67,7 @@
     "href": "slides/index.html#cards-ard_categorical",
     "title": "Supercharging Statistical Analysis with ARDs and the {cards} R Package",
     "section": "{cards}: ard_categorical()",
-    "text": "{cards}: ard_categorical()\n\nADSL |&gt; \n  ard_categorical(\n    by = ARM,\n    variables = AGEGR1\n  ) \n\n{cards} data frame: 27 x 11\n\n\n   group1 group1_level variable variable_level stat_name stat_label  stat\n1     ARM      Placebo   AGEGR1            &lt;65         n          n    14\n2     ARM      Placebo   AGEGR1            &lt;65         N          N    86\n3     ARM      Placebo   AGEGR1            &lt;65         p          % 0.163\n4     ARM      Placebo   AGEGR1            &gt;80         n          n    30\n5     ARM      Placebo   AGEGR1            &gt;80         N          N    86\n6     ARM      Placebo   AGEGR1            &gt;80         p          % 0.349\n7     ARM      Placebo   AGEGR1          65-80         n          n    42\n8     ARM      Placebo   AGEGR1          65-80         N          N    86\n9     ARM      Placebo   AGEGR1          65-80         p          % 0.488\n10    ARM    Xanomeli…   AGEGR1            &lt;65         n          n    11\n\n\nℹ 17 more rows\n\n\nℹ Use `print(n = ...)` to see more rows\n\n\nℹ 4 more variables: context, fmt_fn, warning, error\n\n\n\nAny unobserved levels of the variables appear in the ARD."
+    "text": "{cards}: ard_categorical()\n\nADSL |&gt; \n  ard_categorical(\n    by = ARM,\n    variables = AGEGR1\n  ) |&gt; head(n = 5)\n\n{cards} data frame: 5 x 11\n\n\n  group1 group1_level variable variable_level stat_name stat_label  stat\n1    ARM      Placebo   AGEGR1            &lt;65         n          n    14\n2    ARM      Placebo   AGEGR1            &lt;65         N          N    86\n3    ARM      Placebo   AGEGR1            &lt;65         p          % 0.163\n4    ARM      Placebo   AGEGR1            &gt;80         n          n    30\n5    ARM      Placebo   AGEGR1            &gt;80         N          N    86\n\n\nℹ 4 more variables: context, fmt_fn, warning, error\n\n\n\nAny unobserved levels of the variables appear in the ARD."
   },
   {
     "objectID": "slides/index.html#cards-other-summary-functions",
@@ -244,6 +244,16 @@
     ]
   },
   {
+    "objectID": "index.html#very-useful-resources",
+    "href": "index.html#very-useful-resources",
+    "title": "Supercharging Statistical Analysis with ARDs and the {cards} R Package",
+    "section": "Very Useful resources:",
+    "text": "Very Useful resources:\n\nCollaboration framework Pharmaverse: https://pharmaverse.org/\n{cards} website: https://insightsengineering.github.io/cards/latest-tag/\nAmazing PHUSE25 workshop: https://www.danieldsjoberg.com/ARD-PHUSE-workshop-2025/",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
     "objectID": "index.html#slides",
     "href": "index.html#slides",
     "title": "Supercharging Statistical Analysis with ARDs and the {cards} R Package",
@@ -258,7 +268,7 @@
     "href": "index.html#biography",
     "title": "Supercharging Statistical Analysis with ARDs and the {cards} R Package",
     "section": "Biography",
-    "text": "Biography\n\nBecca Krouse is a data scientist in GSK’s Statistics and Data Science Innovation Hub. A biostatistician by training, she has experience spanning 14+ years in the field of clinical research and specializes in developing R-based tools.\n   \n\nDavide Garolini (he/his) is a Statistical Engineer with an M.Phys. in Biophysics and a Ph.D. in Computational Neuroscience, has over ten years of R programming and package development expertise, specializing in clinical data analysis and regulatory deliveries. He significantly contributes by improving key tools like {rtables}, {tern}, and {gtsummary} for regulatory compliance. Davide strongly advocates for open-source collaboration, promoting advancements in clinical research.",
+    "text": "Biography\n\nBecca Krouse is a data scientist in GSK’s Statistics and Data Science Innovation Hub. A biostatistician by training, she has experience spanning 14+ years in the field of clinical research and specializes in developing R-based tools.\n\nDavide Garolini (he/his) is a Statistical Engineer with an M.Phys. in Biophysics and a Ph.D. in Computational Neuroscience, has over ten years of R programming and package development expertise, specializing in clinical data analysis and regulatory deliveries. He significantly contributes by improving key tools like {rtables}, {tern}, and {gtsummary} for regulatory compliance. Davide strongly advocates for open-source collaboration, promoting advancements in clinical research.",
     "crumbs": [
       "Home"
     ]
