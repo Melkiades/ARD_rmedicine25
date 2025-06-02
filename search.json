@@ -60,21 +60,14 @@
     "href": "slides/index.html#what-does-an-ard-look-like-1",
     "title": "Supercharging Statistical Analysis with ARDs and the {cards} R Package",
     "section": "What does an ARD look like?",
-    "text": "What does an ARD look like?\n\nWe just saw the default statistics returned in the previous example\nIt’s simple to pass any function to ard_continuous() (base R functions, functions from other package, user-defined functions, etc.)\n\n\nADSL |&gt; \n  ard_continuous(\n    by = ARM,\n    variables = AGE,\n    statistic = ~list(cv = \\(x) sd(x) / mean(x))\n  )\n\n{cards} data frame: 3 x 10\n\n\n  group1 group1_level variable stat_name stat_label  stat\n1    ARM      Placebo      AGE        cv         cv 0.114\n2    ARM    Xanomeli…      AGE        cv         cv 0.106\n3    ARM    Xanomeli…      AGE        cv         cv  0.11\n\n\nℹ 4 more variables: context, fmt_fn, warning, error"
+    "text": "What does an ARD look like?\n\nIt’s simple to pass any function to ard_continuous() (base R functions, functions from other package, user-defined functions, etc.)\n\n\nADSL |&gt; \n  ard_continuous(\n    by = ARM,\n    variables = AGE,\n    statistic = ~list(cv = \\(x) sd(x) / mean(x))\n  )\n\n{cards} data frame: 3 x 10\n\n\n  group1 group1_level variable stat_name stat_label  stat\n1    ARM      Placebo      AGE        cv         cv 0.114\n2    ARM    Xanomeli…      AGE        cv         cv 0.106\n3    ARM    Xanomeli…      AGE        cv         cv  0.11\n\n\nℹ 4 more variables: context, fmt_fn, warning, error"
   },
   {
     "objectID": "slides/index.html#cards-ard_categorical",
     "href": "slides/index.html#cards-ard_categorical",
     "title": "Supercharging Statistical Analysis with ARDs and the {cards} R Package",
     "section": "{cards}: ard_categorical()",
-    "text": "{cards}: ard_categorical()\n\nADSL |&gt; \n  ard_categorical(\n    by = ARM,\n    variables = AGEGR1\n  ) |&gt; head(n = 5)\n\n{cards} data frame: 5 x 11\n\n\n  group1 group1_level variable variable_level stat_name stat_label  stat\n1    ARM      Placebo   AGEGR1            &lt;65         n          n    14\n2    ARM      Placebo   AGEGR1            &lt;65         N          N    86\n3    ARM      Placebo   AGEGR1            &lt;65         p          % 0.163\n4    ARM      Placebo   AGEGR1            &gt;80         n          n    30\n5    ARM      Placebo   AGEGR1            &gt;80         N          N    86\n\n\nℹ 4 more variables: context, fmt_fn, warning, error\n\n\n\nAny unobserved levels of the variables appear in the ARD."
-  },
-  {
-    "objectID": "slides/index.html#cards-other-summary-functions",
-    "href": "slides/index.html#cards-other-summary-functions",
-    "title": "Supercharging Statistical Analysis with ARDs and the {cards} R Package",
-    "section": "{cards}: Other Summary Functions",
-    "text": "{cards}: Other Summary Functions\n\nard_dichotomous(): similar to ard_categorical(), but for dichotomous summaries.\nard_hierarchical(): similar to ard_categorical(), but built for nested tabulations, e.g. AE terms within SOC.\nard_complex(): similar to ard_continuous(), but the summary functions can be more complex and accepts other arguments like the full and subsetted (within the by groups) data sets.\nard_missing(): tabulates rates of missingness.\n\nThe results from all these functions are entirely compatible with one another, and can be stacked into a single data frame. 🥞"
+    "text": "{cards}: ard_categorical()\n\nADSL |&gt; \n  ard_categorical(\n    by = ARM,\n    variables = AGEGR1\n  ) |&gt; head(n = 5)\n\n{cards} data frame: 5 x 11\n\n\n  group1 group1_level variable variable_level stat_name stat_label  stat\n1    ARM      Placebo   AGEGR1            &lt;65         n          n    14\n2    ARM      Placebo   AGEGR1            &lt;65         N          N    86\n3    ARM      Placebo   AGEGR1            &lt;65         p          % 0.163\n4    ARM      Placebo   AGEGR1            &gt;80         n          n    30\n5    ARM      Placebo   AGEGR1            &gt;80         N          N    86\n\n\nℹ 4 more variables: context, fmt_fn, warning, error\n\n\n\nOther Summary Functions: ard_dichotomous(), ard_hierarchical(), ard_complex(), and ard_missing() - they can be stacked into a single data frame. 🥞"
   },
   {
     "objectID": "slides/index.html#cardx",
@@ -88,14 +81,14 @@
     "href": "slides/index.html#cardx-1",
     "title": "Supercharging Statistical Analysis with ARDs and the {cards} R Package",
     "section": "{cardx}",
-    "text": "{cardx}\n\nExports ARD frameworks for statistical analyses from many packages\n\n\n  - {stats}\n  - {car}\n  - {effectsize}\n  - {emmeans}\n  - {geepack}\n  - {lme4}\n  - {parameters}\n  - {smd}\n  - {survey}\n  - {survival}\n\n\nThis list is growing (rather quickly) 🌱\n\n\n\n{cards} provides a general framework to easily implement any method. {cardx} provides a nicer user experience for common methods."
+    "text": "{cardx}\n\nExports ARD frameworks for statistical analyses from many packages\n\n\n  - {stats}\n  - {car}\n  - {effectsize}\n  - {emmeans}\n  - {geepack}\n  - {lme4}\n  - {parameters}\n  - {smd}\n  - {survey}\n  - {survival}\n\n\nThis list is growing (rather quickly) 🌱\n\n\n\nwith {cards} you can easily implement any method."
   },
   {
-    "objectID": "slides/index.html#ards-can-be-used-by-gtsummary-for-tables",
-    "href": "slides/index.html#ards-can-be-used-by-gtsummary-for-tables",
+    "objectID": "slides/index.html#gtsummary-in-a-stat-nutshell",
+    "href": "slides/index.html#gtsummary-in-a-stat-nutshell",
     "title": "Supercharging Statistical Analysis with ARDs and the {cards} R Package",
-    "section": "ARDs can be used by {gtsummary} for tables!",
-    "text": "ARDs can be used by {gtsummary} for tables!\n\n\n\n\nSome stats\n\n1,500,000+ installations from CRAN\n1100+ GitHub stars\n300+ contributors\n50+ code contributors\nWon ASA 2021 Innovation in Programming Award and 2024 Posit Pharma Table Contest"
+    "section": "{gtsummary} in a (stat) nutshell",
+    "text": "{gtsummary} in a (stat) nutshell\n\n\n\n-   {gtsummary} is one of the most popular packages for creating summary tables in the R ecosystem\n-   [1,500,000+ installations]{.emphasis} from CRAN\n-   1100+ GitHub stars\n-   300+ contributors\n-   50+ code contributors\n-   Won ASA 2021 Innovation in Programming Award and 2024 Posit Pharma Table Contest"
   },
   {
     "objectID": "slides/index.html#gtsummary-runs-on-ards",
@@ -144,14 +137,7 @@
     "href": "slides/index.html#what-we-liked-1",
     "title": "Supercharging Statistical Analysis with ARDs and the {cards} R Package",
     "section": "What we liked!",
-    "text": "What we liked!\n\nWe loved the ARD-based results, which made:\n\nQC easy and straightforward.\nre-purpose easy for different reporting needs.\n\nEven after the table creation, it is possible to produce ARDs for the results, which can be used for future reporting needs.\nHence, we were able to take advantage of the ARS attributes, such as traceability, re-use, and automation."
-  },
-  {
-    "objectID": "slides/index.html#what-we-would-do-differently",
-    "href": "slides/index.html#what-we-would-do-differently",
-    "title": "Supercharging Statistical Analysis with ARDs and the {cards} R Package",
-    "section": "What we would do differently?",
-    "text": "What we would do differently?\n\nThe full ARS model is metadata driven. This also means the metadata dictate the precise layout of the tables.\nWe preferred to write an R script than metadata files.\n\nIf a trial only reported “standard” tables, it would be much less of an issue to specify detailed metadata for layouts. But every trial has many bespoke tables not part of a standard library."
+    "text": "What we liked!\n\nWe loved the ARD-based results, which made:\n\nQC easy and straightforward.\nre-purpose easy for different reporting needs.\n\nEven after the table creation, it is possible to produce ARDs for the results, which can be used for future reporting needs.\nHence, we were able to take advantage of the ARS attributes, such as traceability, re-use, and automation.  ## What we would do differently?\nThe full ARS model is metadata driven - the metadata dictate the layout of the tables.\nNon-“standard” tables can be problematic when we use metadata for layouts.\nR scripts are better to handle than metadata files."
   },
   {
     "objectID": "slides/index.html#section",

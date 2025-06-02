@@ -208,6 +208,10 @@ Becca Krouse and Davide Garolini, GSK/Roche
 </div>
 
 </section>
+<section class="slide level2">
+
+<!-- 1 -->
+</section>
 <section id="todays-plan" class="slide level2">
 <h2>Today’s Plan</h2>
 <ul>
@@ -225,6 +229,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
 <h2>CDISC’s Analysis Results Standard (ARS)</h2>
 
 <img data-src="images/ars-flow.png" class="quarto-figure quarto-figure-center r-stretch"><p><em>How can we have <strong>reproducible</strong> results when there are so many layouts and formats?</em></p>
+<!-- 2 -->
 </section>
 <section id="analysis-results-standard-ars" class="slide level2">
 <h2>Analysis Results Standard (ARS)</h2>
@@ -238,6 +243,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
 <li>An ARS contains the statistical outcome (e.g., a mean of 25.3).</li>
 <li>It does not contain display instructions (e.g., font size or cell color). This allows for maximum flexibility.</li>
 </ul>
+<!-- 3 -->
 </section>
 <section id="cdiscs-analysis-results-standard-ars-1" class="slide level2">
 <h2>CDISC’s Analysis Results Standard (ARS)</h2>
@@ -251,6 +257,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
 <li><p>{cards} serves as the engine for the <strong>analysis</strong></p></li>
 <li><p>{gtsummary} is the engine for summary tables <strong>display</strong></p></li>
 </ul>
+<!-- 4 -->
 </section>
 <section id="analysis-results-data-ard" class="slide level2">
 <h2>Analysis Results Data (ARD)</h2>
@@ -263,6 +270,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
 <section id="ards-using-cards" class="title-slide slide level1 center">
 <h1>ARDs using {cards}</h1>
 <p><a href="https://insightsengineering.github.io/cards/"><img src="https://insightsengineering.github.io/cards/latest-tag/logo.png" align="center" height="300" alt="cards website"></a></p>
+<!-- 5 -->
 </section>
 <section id="cards-introduction" class="slide level2">
 <h2>{cards}: Introduction</h2>
@@ -274,6 +282,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
 <li><p>52K downloads per month 🤯</p></li>
 </ul>
 </div>
+<!-- 6 -->
 </section>
 <section id="what-does-an-ard-look-like" class="slide level2">
 <h2>What does an ARD look like?</h2>
@@ -303,12 +312,12 @@ Becca Krouse and Davide Garolini, GSK/Roche
 <pre><code>ℹ 2 more variables: warning, error</code></pre>
 </div>
 </div>
+<!-- 7 -->
 </section>
 <section id="what-does-an-ard-look-like-1" class="slide level2">
 <h2>What does an ARD look like?</h2>
 <ul>
-<li><p>We just saw the default statistics returned in the previous example</p></li>
-<li><p>It’s simple to pass <em>any</em> function to <code>ard_continuous()</code> (base R functions, functions from other package, user-defined functions, etc.)</p></li>
+<li>It’s simple to pass <em>any</em> function to <code>ard_continuous()</code> (base R functions, functions from other package, user-defined functions, etc.)</li>
 </ul>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5" data-code-line-numbers="3,5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>ADSL <span class="sc">|&gt;</span> </span>
@@ -330,6 +339,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
 <pre><code>ℹ 4 more variables: context, fmt_fn, warning, error</code></pre>
 </div>
 </div>
+<!-- 8 -->
 </section>
 <section id="cards-ard_categorical" class="slide level2">
 <h2>{cards}: <code>ard_categorical()</code></h2>
@@ -355,23 +365,13 @@ Becca Krouse and Davide Garolini, GSK/Roche
 </div>
 </div>
 <div class="small">
-<p><em>Any unobserved levels of the variables appear in the ARD.</em></p>
+<p>Other Summary Functions: <code>ard_dichotomous()</code>, <code>ard_hierarchical()</code>, <code>ard_complex()</code>, and <code>ard_missing()</code> - they can be <strong>stacked</strong> into a single data frame. 🥞</p>
 </div>
-</section>
-<section id="cards-other-summary-functions" class="slide level2">
-<h2>{cards}: Other Summary Functions</h2>
-<ul>
-<li><p><code>ard_dichotomous()</code>: similar to <code>ard_categorical()</code>, but for dichotomous summaries.</p></li>
-<li><p><code>ard_hierarchical()</code>: similar to <code>ard_categorical()</code>, but built for nested tabulations, e.g.&nbsp;AE terms within SOC.</p></li>
-<li><p><code>ard_complex()</code>: similar to <code>ard_continuous()</code>, but the summary functions can be more complex and accepts other arguments like the full and subsetted (within the by groups) data sets.</p></li>
-<li><p><code>ard_missing()</code>: tabulates rates of missingness.</p></li>
-</ul>
-<p>The results from all these functions are entirely compatible with one another, and can be <strong>stacked</strong> into a single data frame. 🥞</p>
 </section></section>
 <section>
 <section id="cardx-read-extra-cards" class="title-slide slide level1 center">
 <h1>{cardx} (read: extra cards)</h1>
-
+<!-- 9 -->
 </section>
 <section id="cardx" class="slide level2">
 <h2>{cardx}</h2>
@@ -380,6 +380,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
 <li><p>The {cardx} package exports many <code>ard_*()</code> function for statistical methods.</p></li>
 </ul>
 
+<!-- 10 -->
 <img data-src="images/cards-cardx-hex.png" class="quarto-figure quarto-figure-center r-stretch" alt="cards and cardx package logos"></section>
 <section id="cardx-1" class="slide level2">
 <h2>{cardx}</h2>
@@ -403,70 +404,68 @@ Becca Krouse and Davide Garolini, GSK/Roche
 </ul>
 
 <aside><div>
-<p>{cards} provides a general framework to easily implement <em>any</em> method. {cardx} provides a nicer user experience for common methods.</p>
+<p>with {cards} you can easily implement <em>any</em> method.</p>
 </div></aside></section></section>
 <section>
 <section id="from-ards-to-tables-with-gtsummary" class="title-slide slide level1 center">
 <h1>From ARDs to tables with {gtsummary}</h1>
-
+<!-- 11 -->
 </section>
-<section id="ards-can-be-used-by-gtsummary-for-tables" class="slide level2">
-<h2>ARDs can be used by {gtsummary} for tables!</h2>
+<section id="gtsummary-in-a-stat-nutshell" class="slide level2">
+<h2>{gtsummary} in a (stat) nutshell</h2>
 <div class="columns">
 <div class="column" style="width:60%;">
 <div class="small">
-<ul>
-<li><p>Some stats</p>
-<ul>
-<li><span class="emphasis">1,500,000+ installations</span> from CRAN</li>
-<li>1100+ GitHub stars</li>
-<li>300+ contributors</li>
-<li>50+ code contributors</li>
-<li>Won ASA 2021 Innovation in Programming Award and 2024 Posit Pharma Table Contest</li>
-</ul></li>
-</ul>
+<pre><code>-   {gtsummary} is one of the most popular packages for creating summary tables in the R ecosystem
+-   [1,500,000+ installations]{.emphasis} from CRAN
+-   1100+ GitHub stars
+-   300+ contributors
+-   50+ code contributors
+-   Won ASA 2021 Innovation in Programming Award and 2024 Posit Pharma Table Contest</code></pre>
 </div>
 </div><div class="column" style="width:40%;">
 <p><img src="images/gtsummary-logo.png" width="650"></p>
 </div></div>
+<!-- 12 -->
 </section>
 <section id="gtsummary-runs-on-ards" class="slide level2">
 <h2><span style="text-decoration: underline;">{gtsummary} runs on ARDs!</span></h2>
 
+<!-- 13 -->
 <img data-src="images/ARD-gtsummary-example.png" class="r-stretch"></section>
 <section id="demographics-example" class="slide level2">
 <h2>Demographics Example</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14" data-code-line-numbers="|4-9|10|11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a><span class="fu">library</span>(gtsummary)</span>
-<span id="cb14-2"><a></a></span>
-<span id="cb14-3"><a></a>tbl <span class="ot">&lt;-</span> dplyr<span class="sc">::</span><span class="fu">filter</span>(pharmaverseadam<span class="sc">::</span>adsl, SAFFL <span class="sc">==</span> <span class="st">"Y"</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb14-4"><a></a>  <span class="fu">tbl_summary</span>(</span>
-<span id="cb14-5"><a></a>    <span class="at">by =</span> TRT01A,</span>
-<span id="cb14-6"><a></a>    <span class="at">include =</span> <span class="fu">c</span>(AGE, AGEGR1),</span>
-<span id="cb14-7"><a></a>    <span class="at">type =</span> AGE <span class="sc">~</span> <span class="st">"continuous2"</span>,</span>
-<span id="cb14-8"><a></a>    <span class="at">statistic =</span> AGE <span class="sc">~</span> <span class="fu">c</span>(<span class="st">"{mean} ({sd})"</span>, <span class="st">"{median} ({p25}, {p75})"</span>)</span>
-<span id="cb14-9"><a></a>  ) <span class="sc">|&gt;</span> </span>
-<span id="cb14-10"><a></a>  <span class="fu">add_overall</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb14-11"><a></a>  <span class="fu">add_stat_label</span>()</span>
-<span id="cb14-12"><a></a>tbl</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15" data-code-line-numbers="|4-9|"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a><span class="fu">library</span>(gtsummary)</span>
+<span id="cb15-2"><a></a></span>
+<span id="cb15-3"><a></a>tbl <span class="ot">&lt;-</span> dplyr<span class="sc">::</span><span class="fu">filter</span>(pharmaverseadam<span class="sc">::</span>adsl, SAFFL <span class="sc">==</span> <span class="st">"Y"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb15-4"><a></a>  <span class="fu">tbl_summary</span>(</span>
+<span id="cb15-5"><a></a>    <span class="at">by =</span> TRT01A,</span>
+<span id="cb15-6"><a></a>    <span class="at">include =</span> <span class="fu">c</span>(AGE, AGEGR1),</span>
+<span id="cb15-7"><a></a>    <span class="at">type =</span> AGE <span class="sc">~</span> <span class="st">"continuous2"</span>,</span>
+<span id="cb15-8"><a></a>    <span class="at">statistic =</span> AGE <span class="sc">~</span> <span class="fu">c</span>(<span class="st">"{mean} ({sd})"</span>, <span class="st">"{median} ({p25}, {p75})"</span>)</span>
+<span id="cb15-9"><a></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb15-10"><a></a>  <span class="fu">add_overall</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb15-11"><a></a>  <span class="fu">add_stat_label</span>()</span>
+<span id="cb15-12"><a></a>tbl</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div id="xzmznsrryg" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#xzmznsrryg table {
+<div id="jhtmddpeyf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#jhtmddpeyf table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#xzmznsrryg thead, #xzmznsrryg tbody, #xzmznsrryg tfoot, #xzmznsrryg tr, #xzmznsrryg td, #xzmznsrryg th {
+#jhtmddpeyf thead, #jhtmddpeyf tbody, #jhtmddpeyf tfoot, #jhtmddpeyf tr, #jhtmddpeyf td, #jhtmddpeyf th {
   border-style: none;
 }
 
-#xzmznsrryg p {
+#jhtmddpeyf p {
   margin: 0;
   padding: 0;
 }
 
-#xzmznsrryg .gt_table {
+#jhtmddpeyf .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -492,12 +491,12 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-left-color: #D3D3D3;
 }
 
-#xzmznsrryg .gt_caption {
+#jhtmddpeyf .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#xzmznsrryg .gt_title {
+#jhtmddpeyf .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -509,7 +508,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-bottom-width: 0;
 }
 
-#xzmznsrryg .gt_subtitle {
+#jhtmddpeyf .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -521,7 +520,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-top-width: 0;
 }
 
-#xzmznsrryg .gt_heading {
+#jhtmddpeyf .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -533,13 +532,13 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-right-color: #D3D3D3;
 }
 
-#xzmznsrryg .gt_bottom_border {
+#jhtmddpeyf .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#xzmznsrryg .gt_col_headings {
+#jhtmddpeyf .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -554,7 +553,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-right-color: #D3D3D3;
 }
 
-#xzmznsrryg .gt_col_heading {
+#jhtmddpeyf .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -574,7 +573,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   overflow-x: hidden;
 }
 
-#xzmznsrryg .gt_column_spanner_outer {
+#jhtmddpeyf .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -586,15 +585,15 @@ Becca Krouse and Davide Garolini, GSK/Roche
   padding-right: 4px;
 }
 
-#xzmznsrryg .gt_column_spanner_outer:first-child {
+#jhtmddpeyf .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#xzmznsrryg .gt_column_spanner_outer:last-child {
+#jhtmddpeyf .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#xzmznsrryg .gt_column_spanner {
+#jhtmddpeyf .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -606,11 +605,11 @@ Becca Krouse and Davide Garolini, GSK/Roche
   width: 100%;
 }
 
-#xzmznsrryg .gt_spanner_row {
+#jhtmddpeyf .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#xzmznsrryg .gt_group_heading {
+#jhtmddpeyf .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -636,7 +635,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   text-align: left;
 }
 
-#xzmznsrryg .gt_empty_group_heading {
+#jhtmddpeyf .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -651,15 +650,15 @@ Becca Krouse and Davide Garolini, GSK/Roche
   vertical-align: middle;
 }
 
-#xzmznsrryg .gt_from_md > :first-child {
+#jhtmddpeyf .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#xzmznsrryg .gt_from_md > :last-child {
+#jhtmddpeyf .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#xzmznsrryg .gt_row {
+#jhtmddpeyf .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -678,7 +677,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   overflow-x: hidden;
 }
 
-#xzmznsrryg .gt_stub {
+#jhtmddpeyf .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -691,7 +690,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   padding-right: 5px;
 }
 
-#xzmznsrryg .gt_stub_row_group {
+#jhtmddpeyf .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -705,15 +704,15 @@ Becca Krouse and Davide Garolini, GSK/Roche
   vertical-align: top;
 }
 
-#xzmznsrryg .gt_row_group_first td {
+#jhtmddpeyf .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#xzmznsrryg .gt_row_group_first th {
+#jhtmddpeyf .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#xzmznsrryg .gt_summary_row {
+#jhtmddpeyf .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -723,16 +722,16 @@ Becca Krouse and Davide Garolini, GSK/Roche
   padding-right: 5px;
 }
 
-#xzmznsrryg .gt_first_summary_row {
+#jhtmddpeyf .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#xzmznsrryg .gt_first_summary_row.thick {
+#jhtmddpeyf .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#xzmznsrryg .gt_last_summary_row {
+#jhtmddpeyf .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -742,7 +741,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-bottom-color: #D3D3D3;
 }
 
-#xzmznsrryg .gt_grand_summary_row {
+#jhtmddpeyf .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -752,7 +751,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   padding-right: 5px;
 }
 
-#xzmznsrryg .gt_first_grand_summary_row {
+#jhtmddpeyf .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -762,7 +761,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-top-color: #D3D3D3;
 }
 
-#xzmznsrryg .gt_last_grand_summary_row_top {
+#jhtmddpeyf .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -772,11 +771,11 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-bottom-color: #D3D3D3;
 }
 
-#xzmznsrryg .gt_striped {
+#jhtmddpeyf .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#xzmznsrryg .gt_table_body {
+#jhtmddpeyf .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -785,7 +784,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-bottom-color: #D3D3D3;
 }
 
-#xzmznsrryg .gt_footnotes {
+#jhtmddpeyf .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -799,7 +798,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-right-color: #D3D3D3;
 }
 
-#xzmznsrryg .gt_footnote {
+#jhtmddpeyf .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -808,7 +807,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   padding-right: 5px;
 }
 
-#xzmznsrryg .gt_sourcenotes {
+#jhtmddpeyf .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -822,7 +821,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-right-color: #D3D3D3;
 }
 
-#xzmznsrryg .gt_sourcenote {
+#jhtmddpeyf .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -830,72 +829,72 @@ Becca Krouse and Davide Garolini, GSK/Roche
   padding-right: 5px;
 }
 
-#xzmznsrryg .gt_left {
+#jhtmddpeyf .gt_left {
   text-align: left;
 }
 
-#xzmznsrryg .gt_center {
+#jhtmddpeyf .gt_center {
   text-align: center;
 }
 
-#xzmznsrryg .gt_right {
+#jhtmddpeyf .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#xzmznsrryg .gt_font_normal {
+#jhtmddpeyf .gt_font_normal {
   font-weight: normal;
 }
 
-#xzmznsrryg .gt_font_bold {
+#jhtmddpeyf .gt_font_bold {
   font-weight: bold;
 }
 
-#xzmznsrryg .gt_font_italic {
+#jhtmddpeyf .gt_font_italic {
   font-style: italic;
 }
 
-#xzmznsrryg .gt_super {
+#jhtmddpeyf .gt_super {
   font-size: 65%;
 }
 
-#xzmznsrryg .gt_footnote_marks {
+#jhtmddpeyf .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#xzmznsrryg .gt_asterisk {
+#jhtmddpeyf .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#xzmznsrryg .gt_indent_1 {
+#jhtmddpeyf .gt_indent_1 {
   text-indent: 5px;
 }
 
-#xzmznsrryg .gt_indent_2 {
+#jhtmddpeyf .gt_indent_2 {
   text-indent: 10px;
 }
 
-#xzmznsrryg .gt_indent_3 {
+#jhtmddpeyf .gt_indent_3 {
   text-indent: 15px;
 }
 
-#xzmznsrryg .gt_indent_4 {
+#jhtmddpeyf .gt_indent_4 {
   text-indent: 20px;
 }
 
-#xzmznsrryg .gt_indent_5 {
+#jhtmddpeyf .gt_indent_5 {
   text-indent: 25px;
 }
 
-#xzmznsrryg .katex-display {
+#jhtmddpeyf .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#xzmznsrryg div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#jhtmddpeyf div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -974,6 +973,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
 </div>
 </div>
 </div>
+<!-- 14 -->
 </section>
 <section id="demographics-example-1" class="slide level2">
 <h2>Demographics Example</h2>
@@ -981,7 +981,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
 <li>Extract the ARD from the table object</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a><span class="fu">gather_ard</span>(tbl) <span class="sc">|&gt;</span> purrr<span class="sc">::</span><span class="fu">pluck</span>(<span class="st">"tbl_summary"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a><span class="fu">gather_ard</span>(tbl) <span class="sc">|&gt;</span> purrr<span class="sc">::</span><span class="fu">pluck</span>(<span class="st">"tbl_summary"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>{cards} data frame: 79 x 12</code></pre>
 </div>
@@ -1008,41 +1008,42 @@ Becca Krouse and Davide Garolini, GSK/Roche
 <pre><code>ℹ 5 more variables: context, fmt_fn, warning, error, gts_column</code></pre>
 </div>
 </div>
+<!-- 15 -->
 </section>
 <section id="demographics-example-ard-first" class="slide level2">
 <h2>Demographics Example: ARD-first</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb21" data-code-line-numbers="|2-6|7-12|13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a>dplyr<span class="sc">::</span><span class="fu">filter</span>(pharmaverseadam<span class="sc">::</span>adsl, SAFFL <span class="sc">==</span> <span class="st">"Y"</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb21-2"><a></a>  cards<span class="sc">::</span><span class="fu">ard_stack</span>(</span>
-<span id="cb21-3"><a></a>    <span class="at">.by =</span> TRT01A, <span class="at">.overall =</span> <span class="cn">TRUE</span>, <span class="at">.attributes =</span> <span class="cn">TRUE</span>,</span>
-<span id="cb21-4"><a></a>    <span class="fu">ard_continuous</span>(<span class="at">variables =</span> AGE),</span>
-<span id="cb21-5"><a></a>    <span class="fu">ard_categorical</span>(<span class="at">variables =</span> AGEGR1)</span>
-<span id="cb21-6"><a></a>  ) <span class="sc">|&gt;</span> </span>
-<span id="cb21-7"><a></a>  <span class="fu">tbl_ard_summary</span>(</span>
-<span id="cb21-8"><a></a>    <span class="at">by =</span> TRT01A,</span>
-<span id="cb21-9"><a></a>    <span class="at">type =</span> AGE <span class="sc">~</span> <span class="st">"continuous2"</span>,</span>
-<span id="cb21-10"><a></a>    <span class="at">statistic =</span> AGE <span class="sc">~</span> <span class="fu">c</span>(<span class="st">"{mean} ({sd})"</span>, <span class="st">"{median} ({p25}, {p75})"</span>),</span>
-<span id="cb21-11"><a></a>    <span class="at">overall =</span> <span class="cn">TRUE</span></span>
-<span id="cb21-12"><a></a>  ) <span class="sc">|&gt;</span> </span>
-<span id="cb21-13"><a></a>  <span class="fu">add_stat_label</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb22" data-code-line-numbers="|2-6|7-12|"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a></a>dplyr<span class="sc">::</span><span class="fu">filter</span>(pharmaverseadam<span class="sc">::</span>adsl, SAFFL <span class="sc">==</span> <span class="st">"Y"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb22-2"><a></a>  cards<span class="sc">::</span><span class="fu">ard_stack</span>(</span>
+<span id="cb22-3"><a></a>    <span class="at">.by =</span> TRT01A, <span class="at">.overall =</span> <span class="cn">TRUE</span>, <span class="at">.attributes =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb22-4"><a></a>    <span class="fu">ard_continuous</span>(<span class="at">variables =</span> AGE),</span>
+<span id="cb22-5"><a></a>    <span class="fu">ard_categorical</span>(<span class="at">variables =</span> AGEGR1)</span>
+<span id="cb22-6"><a></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb22-7"><a></a>  <span class="fu">tbl_ard_summary</span>(</span>
+<span id="cb22-8"><a></a>    <span class="at">by =</span> TRT01A,</span>
+<span id="cb22-9"><a></a>    <span class="at">type =</span> AGE <span class="sc">~</span> <span class="st">"continuous2"</span>,</span>
+<span id="cb22-10"><a></a>    <span class="at">statistic =</span> AGE <span class="sc">~</span> <span class="fu">c</span>(<span class="st">"{mean} ({sd})"</span>, <span class="st">"{median} ({p25}, {p75})"</span>),</span>
+<span id="cb22-11"><a></a>    <span class="at">overall =</span> <span class="cn">TRUE</span></span>
+<span id="cb22-12"><a></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb22-13"><a></a>  <span class="fu">add_stat_label</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div id="kamdnoovgt" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#kamdnoovgt table {
+<div id="kupwxsbyem" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#kupwxsbyem table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#kamdnoovgt thead, #kamdnoovgt tbody, #kamdnoovgt tfoot, #kamdnoovgt tr, #kamdnoovgt td, #kamdnoovgt th {
+#kupwxsbyem thead, #kupwxsbyem tbody, #kupwxsbyem tfoot, #kupwxsbyem tr, #kupwxsbyem td, #kupwxsbyem th {
   border-style: none;
 }
 
-#kamdnoovgt p {
+#kupwxsbyem p {
   margin: 0;
   padding: 0;
 }
 
-#kamdnoovgt .gt_table {
+#kupwxsbyem .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1068,12 +1069,12 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-left-color: #D3D3D3;
 }
 
-#kamdnoovgt .gt_caption {
+#kupwxsbyem .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#kamdnoovgt .gt_title {
+#kupwxsbyem .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1085,7 +1086,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-bottom-width: 0;
 }
 
-#kamdnoovgt .gt_subtitle {
+#kupwxsbyem .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1097,7 +1098,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-top-width: 0;
 }
 
-#kamdnoovgt .gt_heading {
+#kupwxsbyem .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1109,13 +1110,13 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-right-color: #D3D3D3;
 }
 
-#kamdnoovgt .gt_bottom_border {
+#kupwxsbyem .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#kamdnoovgt .gt_col_headings {
+#kupwxsbyem .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1130,7 +1131,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-right-color: #D3D3D3;
 }
 
-#kamdnoovgt .gt_col_heading {
+#kupwxsbyem .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1150,7 +1151,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   overflow-x: hidden;
 }
 
-#kamdnoovgt .gt_column_spanner_outer {
+#kupwxsbyem .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1162,15 +1163,15 @@ Becca Krouse and Davide Garolini, GSK/Roche
   padding-right: 4px;
 }
 
-#kamdnoovgt .gt_column_spanner_outer:first-child {
+#kupwxsbyem .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#kamdnoovgt .gt_column_spanner_outer:last-child {
+#kupwxsbyem .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#kamdnoovgt .gt_column_spanner {
+#kupwxsbyem .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1182,11 +1183,11 @@ Becca Krouse and Davide Garolini, GSK/Roche
   width: 100%;
 }
 
-#kamdnoovgt .gt_spanner_row {
+#kupwxsbyem .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#kamdnoovgt .gt_group_heading {
+#kupwxsbyem .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1212,7 +1213,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   text-align: left;
 }
 
-#kamdnoovgt .gt_empty_group_heading {
+#kupwxsbyem .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1227,15 +1228,15 @@ Becca Krouse and Davide Garolini, GSK/Roche
   vertical-align: middle;
 }
 
-#kamdnoovgt .gt_from_md > :first-child {
+#kupwxsbyem .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#kamdnoovgt .gt_from_md > :last-child {
+#kupwxsbyem .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#kamdnoovgt .gt_row {
+#kupwxsbyem .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1254,7 +1255,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   overflow-x: hidden;
 }
 
-#kamdnoovgt .gt_stub {
+#kupwxsbyem .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1267,7 +1268,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   padding-right: 5px;
 }
 
-#kamdnoovgt .gt_stub_row_group {
+#kupwxsbyem .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1281,15 +1282,15 @@ Becca Krouse and Davide Garolini, GSK/Roche
   vertical-align: top;
 }
 
-#kamdnoovgt .gt_row_group_first td {
+#kupwxsbyem .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#kamdnoovgt .gt_row_group_first th {
+#kupwxsbyem .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#kamdnoovgt .gt_summary_row {
+#kupwxsbyem .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1299,16 +1300,16 @@ Becca Krouse and Davide Garolini, GSK/Roche
   padding-right: 5px;
 }
 
-#kamdnoovgt .gt_first_summary_row {
+#kupwxsbyem .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#kamdnoovgt .gt_first_summary_row.thick {
+#kupwxsbyem .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#kamdnoovgt .gt_last_summary_row {
+#kupwxsbyem .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1318,7 +1319,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-bottom-color: #D3D3D3;
 }
 
-#kamdnoovgt .gt_grand_summary_row {
+#kupwxsbyem .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1328,7 +1329,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   padding-right: 5px;
 }
 
-#kamdnoovgt .gt_first_grand_summary_row {
+#kupwxsbyem .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1338,7 +1339,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-top-color: #D3D3D3;
 }
 
-#kamdnoovgt .gt_last_grand_summary_row_top {
+#kupwxsbyem .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1348,11 +1349,11 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-bottom-color: #D3D3D3;
 }
 
-#kamdnoovgt .gt_striped {
+#kupwxsbyem .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#kamdnoovgt .gt_table_body {
+#kupwxsbyem .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1361,7 +1362,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-bottom-color: #D3D3D3;
 }
 
-#kamdnoovgt .gt_footnotes {
+#kupwxsbyem .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1375,7 +1376,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-right-color: #D3D3D3;
 }
 
-#kamdnoovgt .gt_footnote {
+#kupwxsbyem .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1384,7 +1385,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   padding-right: 5px;
 }
 
-#kamdnoovgt .gt_sourcenotes {
+#kupwxsbyem .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1398,7 +1399,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-right-color: #D3D3D3;
 }
 
-#kamdnoovgt .gt_sourcenote {
+#kupwxsbyem .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1406,72 +1407,72 @@ Becca Krouse and Davide Garolini, GSK/Roche
   padding-right: 5px;
 }
 
-#kamdnoovgt .gt_left {
+#kupwxsbyem .gt_left {
   text-align: left;
 }
 
-#kamdnoovgt .gt_center {
+#kupwxsbyem .gt_center {
   text-align: center;
 }
 
-#kamdnoovgt .gt_right {
+#kupwxsbyem .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#kamdnoovgt .gt_font_normal {
+#kupwxsbyem .gt_font_normal {
   font-weight: normal;
 }
 
-#kamdnoovgt .gt_font_bold {
+#kupwxsbyem .gt_font_bold {
   font-weight: bold;
 }
 
-#kamdnoovgt .gt_font_italic {
+#kupwxsbyem .gt_font_italic {
   font-style: italic;
 }
 
-#kamdnoovgt .gt_super {
+#kupwxsbyem .gt_super {
   font-size: 65%;
 }
 
-#kamdnoovgt .gt_footnote_marks {
+#kupwxsbyem .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#kamdnoovgt .gt_asterisk {
+#kupwxsbyem .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#kamdnoovgt .gt_indent_1 {
+#kupwxsbyem .gt_indent_1 {
   text-indent: 5px;
 }
 
-#kamdnoovgt .gt_indent_2 {
+#kupwxsbyem .gt_indent_2 {
   text-indent: 10px;
 }
 
-#kamdnoovgt .gt_indent_3 {
+#kupwxsbyem .gt_indent_3 {
   text-indent: 15px;
 }
 
-#kamdnoovgt .gt_indent_4 {
+#kupwxsbyem .gt_indent_4 {
   text-indent: 20px;
 }
 
-#kamdnoovgt .gt_indent_5 {
+#kupwxsbyem .gt_indent_5 {
   text-indent: 25px;
 }
 
-#kamdnoovgt .katex-display {
+#kupwxsbyem .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#kamdnoovgt div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#kupwxsbyem div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1550,6 +1551,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
 </div>
 </div>
 </div>
+<!-- 16 -->
 </section></section>
 <section>
 <section id="our-pilot" class="title-slide slide level1 center">
@@ -1583,17 +1585,10 @@ Becca Krouse and Davide Garolini, GSK/Roche
 <li>re-purpose easy for different reporting needs.</li>
 </ul></li>
 <li><p>Even after the table creation, it is possible to produce ARDs for the results, which can be used for future reporting needs.</p></li>
-<li><p>Hence, we were able to take advantage of the ARS attributes, such as traceability, re-use, and automation.</p></li>
-</ul>
-</section>
-<section id="what-we-would-do-differently" class="slide level2">
-<h2>What we would do differently?</h2>
-<ul>
-<li><p>The full ARS model is metadata driven. This also means the metadata dictate the precise layout of the tables.</p></li>
-<li><p>We preferred to write an R script than metadata files.</p>
-<ul>
-<li>If a trial only reported “standard” tables, it would be much less of an issue to specify detailed metadata for layouts. But every trial has many bespoke tables not part of a standard library.</li>
-</ul></li>
+<li><p>Hence, we were able to take advantage of the ARS attributes, such as traceability, re-use, and automation. <!-- 17 --> ## What we would do differently?</p></li>
+<li><p>The full ARS model is metadata driven - the metadata dictate the layout of the tables.</p></li>
+<li><p>Non-“standard” tables can be problematic when we use metadata for layouts.</p></li>
+<li><p>R scripts are better to handle than metadata files.</p></li>
 </ul>
 </section>
 <section id="section" class="slide level2">
@@ -1645,9 +1640,9 @@ Becca Krouse and Davide Garolini, GSK/Roche
 </ul>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a></a>pharmaverseadam<span class="sc">::</span>adsl <span class="sc">|&gt;</span> </span>
-<span id="cb22-2"><a></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(ARM <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Xanomeline High Dose"</span>, <span class="st">"Xanomeline Low Dose"</span>)) <span class="sc">|&gt;</span></span>
-<span id="cb22-3"><a></a>  cardx<span class="sc">::</span><span class="fu">ard_stats_t_test</span>(<span class="at">by =</span> ARM, <span class="at">variables =</span> AGE)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a></a>pharmaverseadam<span class="sc">::</span>adsl <span class="sc">|&gt;</span> </span>
+<span id="cb23-2"><a></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(ARM <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Xanomeline High Dose"</span>, <span class="st">"Xanomeline Low Dose"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb23-3"><a></a>  cardx<span class="sc">::</span><span class="fu">ard_stats_t_test</span>(<span class="at">by =</span> ARM, <span class="at">variables =</span> AGE)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>{cards} data frame: 14 x 9</code></pre>
 </div>
@@ -1685,38 +1680,38 @@ Becca Krouse and Davide Garolini, GSK/Roche
 <section id="cardx-regression-example" class="slide level2">
 <h2>{cardx} Regression Example</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a></a><span class="fu">library</span>(survival); <span class="fu">library</span>(ggsurvfit)</span>
-<span id="cb26-2"><a></a></span>
-<span id="cb26-3"><a></a><span class="co"># build model</span></span>
-<span id="cb26-4"><a></a>mod <span class="ot">&lt;-</span> pharmaverseadam<span class="sc">::</span>adtte_onco <span class="sc">|&gt;</span> </span>
-<span id="cb26-5"><a></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(PARAM <span class="sc">%in%</span> <span class="st">"Progression Free Survival"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb26-6"><a></a>  <span class="fu">coxph</span>(<span class="fu">Surv_CNSR</span>() <span class="sc">~</span> ARM, <span class="at">data =</span> _)</span>
-<span id="cb26-7"><a></a></span>
-<span id="cb26-8"><a></a><span class="co"># put model in a summary table</span></span>
-<span id="cb26-9"><a></a>tbl <span class="ot">&lt;-</span> gtsummary<span class="sc">::</span><span class="fu">tbl_regression</span>(mod, <span class="at">exponentiate =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb26-10"><a></a>  gtsummary<span class="sc">::</span><span class="fu">add_n</span>(<span class="at">location =</span> <span class="fu">c</span>(<span class="st">'label'</span>, <span class="st">'level'</span>)) <span class="sc">|&gt;</span> </span>
-<span id="cb26-11"><a></a>  gtsummary<span class="sc">::</span><span class="fu">add_nevent</span>(<span class="at">location =</span> <span class="fu">c</span>(<span class="st">'label'</span>, <span class="st">'level'</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a></a><span class="fu">library</span>(survival); <span class="fu">library</span>(ggsurvfit)</span>
+<span id="cb27-2"><a></a></span>
+<span id="cb27-3"><a></a><span class="co"># build model</span></span>
+<span id="cb27-4"><a></a>mod <span class="ot">&lt;-</span> pharmaverseadam<span class="sc">::</span>adtte_onco <span class="sc">|&gt;</span> </span>
+<span id="cb27-5"><a></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(PARAM <span class="sc">%in%</span> <span class="st">"Progression Free Survival"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb27-6"><a></a>  <span class="fu">coxph</span>(<span class="fu">Surv_CNSR</span>() <span class="sc">~</span> ARM, <span class="at">data =</span> _)</span>
+<span id="cb27-7"><a></a></span>
+<span id="cb27-8"><a></a><span class="co"># put model in a summary table</span></span>
+<span id="cb27-9"><a></a>tbl <span class="ot">&lt;-</span> gtsummary<span class="sc">::</span><span class="fu">tbl_regression</span>(mod, <span class="at">exponentiate =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb27-10"><a></a>  gtsummary<span class="sc">::</span><span class="fu">add_n</span>(<span class="at">location =</span> <span class="fu">c</span>(<span class="st">'label'</span>, <span class="st">'level'</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb27-11"><a></a>  gtsummary<span class="sc">::</span><span class="fu">add_nevent</span>(<span class="at">location =</span> <span class="fu">c</span>(<span class="st">'label'</span>, <span class="st">'level'</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br></p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="cqfylunrhh" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#cqfylunrhh table {
+<div id="jpttlirlmp" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#jpttlirlmp table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#cqfylunrhh thead, #cqfylunrhh tbody, #cqfylunrhh tfoot, #cqfylunrhh tr, #cqfylunrhh td, #cqfylunrhh th {
+#jpttlirlmp thead, #jpttlirlmp tbody, #jpttlirlmp tfoot, #jpttlirlmp tr, #jpttlirlmp td, #jpttlirlmp th {
   border-style: none;
 }
 
-#cqfylunrhh p {
+#jpttlirlmp p {
   margin: 0;
   padding: 0;
 }
 
-#cqfylunrhh .gt_table {
+#jpttlirlmp .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1742,12 +1737,12 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-left-color: #D3D3D3;
 }
 
-#cqfylunrhh .gt_caption {
+#jpttlirlmp .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#cqfylunrhh .gt_title {
+#jpttlirlmp .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1759,7 +1754,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-bottom-width: 0;
 }
 
-#cqfylunrhh .gt_subtitle {
+#jpttlirlmp .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1771,7 +1766,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-top-width: 0;
 }
 
-#cqfylunrhh .gt_heading {
+#jpttlirlmp .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1783,13 +1778,13 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-right-color: #D3D3D3;
 }
 
-#cqfylunrhh .gt_bottom_border {
+#jpttlirlmp .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#cqfylunrhh .gt_col_headings {
+#jpttlirlmp .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1804,7 +1799,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-right-color: #D3D3D3;
 }
 
-#cqfylunrhh .gt_col_heading {
+#jpttlirlmp .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1824,7 +1819,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   overflow-x: hidden;
 }
 
-#cqfylunrhh .gt_column_spanner_outer {
+#jpttlirlmp .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1836,15 +1831,15 @@ Becca Krouse and Davide Garolini, GSK/Roche
   padding-right: 4px;
 }
 
-#cqfylunrhh .gt_column_spanner_outer:first-child {
+#jpttlirlmp .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#cqfylunrhh .gt_column_spanner_outer:last-child {
+#jpttlirlmp .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#cqfylunrhh .gt_column_spanner {
+#jpttlirlmp .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1856,11 +1851,11 @@ Becca Krouse and Davide Garolini, GSK/Roche
   width: 100%;
 }
 
-#cqfylunrhh .gt_spanner_row {
+#jpttlirlmp .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#cqfylunrhh .gt_group_heading {
+#jpttlirlmp .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1886,7 +1881,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   text-align: left;
 }
 
-#cqfylunrhh .gt_empty_group_heading {
+#jpttlirlmp .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1901,15 +1896,15 @@ Becca Krouse and Davide Garolini, GSK/Roche
   vertical-align: middle;
 }
 
-#cqfylunrhh .gt_from_md > :first-child {
+#jpttlirlmp .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#cqfylunrhh .gt_from_md > :last-child {
+#jpttlirlmp .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#cqfylunrhh .gt_row {
+#jpttlirlmp .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1928,7 +1923,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   overflow-x: hidden;
 }
 
-#cqfylunrhh .gt_stub {
+#jpttlirlmp .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1941,7 +1936,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   padding-right: 5px;
 }
 
-#cqfylunrhh .gt_stub_row_group {
+#jpttlirlmp .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1955,15 +1950,15 @@ Becca Krouse and Davide Garolini, GSK/Roche
   vertical-align: top;
 }
 
-#cqfylunrhh .gt_row_group_first td {
+#jpttlirlmp .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#cqfylunrhh .gt_row_group_first th {
+#jpttlirlmp .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#cqfylunrhh .gt_summary_row {
+#jpttlirlmp .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1973,16 +1968,16 @@ Becca Krouse and Davide Garolini, GSK/Roche
   padding-right: 5px;
 }
 
-#cqfylunrhh .gt_first_summary_row {
+#jpttlirlmp .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#cqfylunrhh .gt_first_summary_row.thick {
+#jpttlirlmp .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#cqfylunrhh .gt_last_summary_row {
+#jpttlirlmp .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1992,7 +1987,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-bottom-color: #D3D3D3;
 }
 
-#cqfylunrhh .gt_grand_summary_row {
+#jpttlirlmp .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2002,7 +1997,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   padding-right: 5px;
 }
 
-#cqfylunrhh .gt_first_grand_summary_row {
+#jpttlirlmp .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2012,7 +2007,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-top-color: #D3D3D3;
 }
 
-#cqfylunrhh .gt_last_grand_summary_row_top {
+#jpttlirlmp .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2022,11 +2017,11 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-bottom-color: #D3D3D3;
 }
 
-#cqfylunrhh .gt_striped {
+#jpttlirlmp .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#cqfylunrhh .gt_table_body {
+#jpttlirlmp .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2035,7 +2030,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-bottom-color: #D3D3D3;
 }
 
-#cqfylunrhh .gt_footnotes {
+#jpttlirlmp .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2049,7 +2044,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-right-color: #D3D3D3;
 }
 
-#cqfylunrhh .gt_footnote {
+#jpttlirlmp .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -2058,7 +2053,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   padding-right: 5px;
 }
 
-#cqfylunrhh .gt_sourcenotes {
+#jpttlirlmp .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2072,7 +2067,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-right-color: #D3D3D3;
 }
 
-#cqfylunrhh .gt_sourcenote {
+#jpttlirlmp .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -2080,72 +2075,72 @@ Becca Krouse and Davide Garolini, GSK/Roche
   padding-right: 5px;
 }
 
-#cqfylunrhh .gt_left {
+#jpttlirlmp .gt_left {
   text-align: left;
 }
 
-#cqfylunrhh .gt_center {
+#jpttlirlmp .gt_center {
   text-align: center;
 }
 
-#cqfylunrhh .gt_right {
+#jpttlirlmp .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#cqfylunrhh .gt_font_normal {
+#jpttlirlmp .gt_font_normal {
   font-weight: normal;
 }
 
-#cqfylunrhh .gt_font_bold {
+#jpttlirlmp .gt_font_bold {
   font-weight: bold;
 }
 
-#cqfylunrhh .gt_font_italic {
+#jpttlirlmp .gt_font_italic {
   font-style: italic;
 }
 
-#cqfylunrhh .gt_super {
+#jpttlirlmp .gt_super {
   font-size: 65%;
 }
 
-#cqfylunrhh .gt_footnote_marks {
+#jpttlirlmp .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#cqfylunrhh .gt_asterisk {
+#jpttlirlmp .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#cqfylunrhh .gt_indent_1 {
+#jpttlirlmp .gt_indent_1 {
   text-indent: 5px;
 }
 
-#cqfylunrhh .gt_indent_2 {
+#jpttlirlmp .gt_indent_2 {
   text-indent: 10px;
 }
 
-#cqfylunrhh .gt_indent_3 {
+#jpttlirlmp .gt_indent_3 {
   text-indent: 15px;
 }
 
-#cqfylunrhh .gt_indent_4 {
+#jpttlirlmp .gt_indent_4 {
   text-indent: 20px;
 }
 
-#cqfylunrhh .gt_indent_5 {
+#jpttlirlmp .gt_indent_5 {
   text-indent: 25px;
 }
 
-#cqfylunrhh .katex-display {
+#jpttlirlmp .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#cqfylunrhh div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#jpttlirlmp div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -2222,14 +2217,14 @@ Becca Krouse and Davide Garolini, GSK/Roche
 <h2>When things go wrong 😱</h2>
 <p>What happens when statistics are un-calculable?</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a></a>ard_gone_wrong <span class="ot">&lt;-</span> </span>
-<span id="cb27-2"><a></a>  cards<span class="sc">::</span>ADSL <span class="sc">|&gt;</span> </span>
-<span id="cb27-3"><a></a>  cards<span class="sc">::</span><span class="fu">ard_continuous</span>(</span>
-<span id="cb27-4"><a></a>    <span class="at">by =</span> ARM,</span>
-<span id="cb27-5"><a></a>    <span class="at">variable =</span> AGEGR1,</span>
-<span id="cb27-6"><a></a>    <span class="at">statistic =</span> <span class="sc">~</span><span class="fu">list</span>(<span class="at">kurtosis =</span> \(x) e1071<span class="sc">::</span><span class="fu">kurtosis</span>(x))</span>
-<span id="cb27-7"><a></a>  )</span>
-<span id="cb27-8"><a></a>ard_gone_wrong</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a></a>ard_gone_wrong <span class="ot">&lt;-</span> </span>
+<span id="cb28-2"><a></a>  cards<span class="sc">::</span>ADSL <span class="sc">|&gt;</span> </span>
+<span id="cb28-3"><a></a>  cards<span class="sc">::</span><span class="fu">ard_continuous</span>(</span>
+<span id="cb28-4"><a></a>    <span class="at">by =</span> ARM,</span>
+<span id="cb28-5"><a></a>    <span class="at">variable =</span> AGEGR1,</span>
+<span id="cb28-6"><a></a>    <span class="at">statistic =</span> <span class="sc">~</span><span class="fu">list</span>(<span class="at">kurtosis =</span> \(x) e1071<span class="sc">::</span><span class="fu">kurtosis</span>(x))</span>
+<span id="cb28-7"><a></a>  )</span>
+<span id="cb28-8"><a></a>ard_gone_wrong</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>{cards} data frame: 3 x 10</code></pre>
 </div>
@@ -2244,7 +2239,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
 </div>
 </div>
 <div class="fragment">
-<div class="sourceCode" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a></a>cards<span class="sc">::</span><span class="fu">print_ard_conditions</span>(ard_gone_wrong)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a></a>cards<span class="sc">::</span><span class="fu">print_ard_conditions</span>(ard_gone_wrong)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><img data-src="images/ard-error-msg.png"></p>
 </div>
 </section>
@@ -2271,28 +2266,28 @@ Becca Krouse and Davide Garolini, GSK/Roche
 <li><p>The <code>as_gtsummary()</code> function ingests a data frame and adds the {gtsummary} framework around it: great for listings and highly bespoke tables.</p></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a></a>cards<span class="sc">::</span>ADAE[<span class="dv">1</span><span class="sc">:</span><span class="dv">7</span>, <span class="fu">c</span>(<span class="st">"USUBJID"</span>, <span class="st">"AESOC"</span>, <span class="st">"AETERM"</span>, <span class="st">"AESEV"</span>)] <span class="sc">|&gt;</span> </span>
-<span id="cb32-2"><a></a>  <span class="fu">as_gtsummary</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb32-3"><a></a>  <span class="fu">modify_column_alignment</span>(<span class="fu">everything</span>(), <span class="st">"left"</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb32-4"><a></a>  <span class="fu">as_gt</span>(<span class="at">groupname_col =</span> <span class="st">"USUBJID"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a></a>cards<span class="sc">::</span>ADAE[<span class="dv">1</span><span class="sc">:</span><span class="dv">7</span>, <span class="fu">c</span>(<span class="st">"USUBJID"</span>, <span class="st">"AESOC"</span>, <span class="st">"AETERM"</span>, <span class="st">"AESEV"</span>)] <span class="sc">|&gt;</span> </span>
+<span id="cb33-2"><a></a>  <span class="fu">as_gtsummary</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb33-3"><a></a>  <span class="fu">modify_column_alignment</span>(<span class="fu">everything</span>(), <span class="st">"left"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb33-4"><a></a>  <span class="fu">as_gt</span>(<span class="at">groupname_col =</span> <span class="st">"USUBJID"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div id="uscukilchl" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#uscukilchl table {
+<div id="eqeoykkvov" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#eqeoykkvov table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#uscukilchl thead, #uscukilchl tbody, #uscukilchl tfoot, #uscukilchl tr, #uscukilchl td, #uscukilchl th {
+#eqeoykkvov thead, #eqeoykkvov tbody, #eqeoykkvov tfoot, #eqeoykkvov tr, #eqeoykkvov td, #eqeoykkvov th {
   border-style: none;
 }
 
-#uscukilchl p {
+#eqeoykkvov p {
   margin: 0;
   padding: 0;
 }
 
-#uscukilchl .gt_table {
+#eqeoykkvov .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -2318,12 +2313,12 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-left-color: #D3D3D3;
 }
 
-#uscukilchl .gt_caption {
+#eqeoykkvov .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#uscukilchl .gt_title {
+#eqeoykkvov .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -2335,7 +2330,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-bottom-width: 0;
 }
 
-#uscukilchl .gt_subtitle {
+#eqeoykkvov .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -2347,7 +2342,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-top-width: 0;
 }
 
-#uscukilchl .gt_heading {
+#eqeoykkvov .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -2359,13 +2354,13 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-right-color: #D3D3D3;
 }
 
-#uscukilchl .gt_bottom_border {
+#eqeoykkvov .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#uscukilchl .gt_col_headings {
+#eqeoykkvov .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2380,7 +2375,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-right-color: #D3D3D3;
 }
 
-#uscukilchl .gt_col_heading {
+#eqeoykkvov .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2400,7 +2395,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   overflow-x: hidden;
 }
 
-#uscukilchl .gt_column_spanner_outer {
+#eqeoykkvov .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2412,15 +2407,15 @@ Becca Krouse and Davide Garolini, GSK/Roche
   padding-right: 4px;
 }
 
-#uscukilchl .gt_column_spanner_outer:first-child {
+#eqeoykkvov .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#uscukilchl .gt_column_spanner_outer:last-child {
+#eqeoykkvov .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#uscukilchl .gt_column_spanner {
+#eqeoykkvov .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2432,11 +2427,11 @@ Becca Krouse and Davide Garolini, GSK/Roche
   width: 100%;
 }
 
-#uscukilchl .gt_spanner_row {
+#eqeoykkvov .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#uscukilchl .gt_group_heading {
+#eqeoykkvov .gt_group_heading {
   padding-top: 1px;
   padding-bottom: 1px;
   padding-left: 5px;
@@ -2462,7 +2457,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   text-align: left;
 }
 
-#uscukilchl .gt_empty_group_heading {
+#eqeoykkvov .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2477,15 +2472,15 @@ Becca Krouse and Davide Garolini, GSK/Roche
   vertical-align: middle;
 }
 
-#uscukilchl .gt_from_md > :first-child {
+#eqeoykkvov .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#uscukilchl .gt_from_md > :last-child {
+#eqeoykkvov .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#uscukilchl .gt_row {
+#eqeoykkvov .gt_row {
   padding-top: 1px;
   padding-bottom: 1px;
   padding-left: 5px;
@@ -2504,7 +2499,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   overflow-x: hidden;
 }
 
-#uscukilchl .gt_stub {
+#eqeoykkvov .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2517,7 +2512,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   padding-right: 5px;
 }
 
-#uscukilchl .gt_stub_row_group {
+#eqeoykkvov .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2531,15 +2526,15 @@ Becca Krouse and Davide Garolini, GSK/Roche
   vertical-align: top;
 }
 
-#uscukilchl .gt_row_group_first td {
+#eqeoykkvov .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#uscukilchl .gt_row_group_first th {
+#eqeoykkvov .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#uscukilchl .gt_summary_row {
+#eqeoykkvov .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2549,16 +2544,16 @@ Becca Krouse and Davide Garolini, GSK/Roche
   padding-right: 5px;
 }
 
-#uscukilchl .gt_first_summary_row {
+#eqeoykkvov .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#uscukilchl .gt_first_summary_row.thick {
+#eqeoykkvov .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#uscukilchl .gt_last_summary_row {
+#eqeoykkvov .gt_last_summary_row {
   padding-top: 1px;
   padding-bottom: 1px;
   padding-left: 5px;
@@ -2568,7 +2563,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-bottom-color: #D3D3D3;
 }
 
-#uscukilchl .gt_grand_summary_row {
+#eqeoykkvov .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2578,7 +2573,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   padding-right: 5px;
 }
 
-#uscukilchl .gt_first_grand_summary_row {
+#eqeoykkvov .gt_first_grand_summary_row {
   padding-top: 1px;
   padding-bottom: 1px;
   padding-left: 5px;
@@ -2588,7 +2583,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-top-color: #D3D3D3;
 }
 
-#uscukilchl .gt_last_grand_summary_row_top {
+#eqeoykkvov .gt_last_grand_summary_row_top {
   padding-top: 1px;
   padding-bottom: 1px;
   padding-left: 5px;
@@ -2598,11 +2593,11 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-bottom-color: #D3D3D3;
 }
 
-#uscukilchl .gt_striped {
+#eqeoykkvov .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#uscukilchl .gt_table_body {
+#eqeoykkvov .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2611,7 +2606,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-bottom-color: #D3D3D3;
 }
 
-#uscukilchl .gt_footnotes {
+#eqeoykkvov .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2625,7 +2620,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-right-color: #D3D3D3;
 }
 
-#uscukilchl .gt_footnote {
+#eqeoykkvov .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 1px;
@@ -2634,7 +2629,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   padding-right: 5px;
 }
 
-#uscukilchl .gt_sourcenotes {
+#eqeoykkvov .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2648,7 +2643,7 @@ Becca Krouse and Davide Garolini, GSK/Roche
   border-right-color: #D3D3D3;
 }
 
-#uscukilchl .gt_sourcenote {
+#eqeoykkvov .gt_sourcenote {
   font-size: 90%;
   padding-top: 1px;
   padding-bottom: 1px;
@@ -2656,72 +2651,72 @@ Becca Krouse and Davide Garolini, GSK/Roche
   padding-right: 5px;
 }
 
-#uscukilchl .gt_left {
+#eqeoykkvov .gt_left {
   text-align: left;
 }
 
-#uscukilchl .gt_center {
+#eqeoykkvov .gt_center {
   text-align: center;
 }
 
-#uscukilchl .gt_right {
+#eqeoykkvov .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#uscukilchl .gt_font_normal {
+#eqeoykkvov .gt_font_normal {
   font-weight: normal;
 }
 
-#uscukilchl .gt_font_bold {
+#eqeoykkvov .gt_font_bold {
   font-weight: bold;
 }
 
-#uscukilchl .gt_font_italic {
+#eqeoykkvov .gt_font_italic {
   font-style: italic;
 }
 
-#uscukilchl .gt_super {
+#eqeoykkvov .gt_super {
   font-size: 65%;
 }
 
-#uscukilchl .gt_footnote_marks {
+#eqeoykkvov .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#uscukilchl .gt_asterisk {
+#eqeoykkvov .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#uscukilchl .gt_indent_1 {
+#eqeoykkvov .gt_indent_1 {
   text-indent: 5px;
 }
 
-#uscukilchl .gt_indent_2 {
+#eqeoykkvov .gt_indent_2 {
   text-indent: 10px;
 }
 
-#uscukilchl .gt_indent_3 {
+#eqeoykkvov .gt_indent_3 {
   text-indent: 15px;
 }
 
-#uscukilchl .gt_indent_4 {
+#eqeoykkvov .gt_indent_4 {
   text-indent: 20px;
 }
 
-#uscukilchl .gt_indent_5 {
+#eqeoykkvov .gt_indent_5 {
   text-indent: 25px;
 }
 
-#uscukilchl .katex-display {
+#eqeoykkvov .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#uscukilchl div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#eqeoykkvov div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
