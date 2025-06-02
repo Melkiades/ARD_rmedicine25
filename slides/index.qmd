@@ -190,53 +190,20 @@ The results from all these functions are entirely compatible with one another, a
 
 # From ARDs to tables with {gtsummary}
 
-## 
+## ARDs can be used by {gtsummary} for tables!
 
 ::::::::: columns
 :::::: {.column width="60%"}
-### How {gtsummary} started
 
 ::: small
--   Began to address reproducible issues while working in academia
-
--   Goal was to build a package to summarize study results with code that was [both simple and customizable]{.emphasis}
-
--   First released in May 2019
-:::
-
-:::: fragment
-### How it's going
-
-::: small
--   The stats
+-   Some stats
 
     -   [1,500,000+ installations]{.emphasis} from CRAN
     -   1100+ GitHub stars
     -   300+ contributors
     -   50+ code contributors
+    -   Won ASA 2021 Innovation in Programming Award and 2024 Posit Pharma Table Contest
 :::
-::::
-::::::
-
-:::: {.column width="40%"}
-<img src="images/gtsummary-logo.png" width="650"/>
-
-::::
-:::::::::
-
-##
-
-::::::::: columns
-:::::: {.column width="60%"}
-
--   Won the 2021 American Statistical Association (ASA) Innovation in Programming Award
-
-<img src="images/asa.png" width="250"/>
-
--   Agustin Calatroni and I won the 2024 Posit Pharma Table Contest by re-creating an entire CSR with the {gtsummary} package
-
-<img src="images/posit.png" width="280"/>
-
 ::::::
 
 :::: {.column width="40%"}
@@ -253,7 +220,7 @@ The results from all these functions are entirely compatible with one another, a
 ## Demographics Example
 
 ```{r}
-#| code-line-numbers: "|4-9|5|6|7|8|10|11"
+#| code-line-numbers: "|4-9|10|11"
 library(gtsummary)
 
 tbl <- dplyr::filter(pharmaverseadam::adsl, SAFFL == "Y") |> 
@@ -280,7 +247,7 @@ gather_ard(tbl) |> purrr::pluck("tbl_summary")
 ## Demographics Example: ARD-first
 
 ```{r}
-#| code-line-numbers: "|2-6|7-12|8|9|10|11|13"
+#| code-line-numbers: "|2-6|7-12|13"
 dplyr::filter(pharmaverseadam::adsl, SAFFL == "Y") |> 
   cards::ard_stack(
     .by = TRT01A, .overall = TRUE, .attributes = TRUE,
@@ -351,7 +318,26 @@ dplyr::filter(pharmaverseadam::adsl, SAFFL == "Y") |>
 
 
 
+##
 
+::::::::: columns
+:::::: {.column width="60%"}
+
+-   Won the 2021 American Statistical Association (ASA) Innovation in Programming Award
+
+<img src="images/asa.png" width="250"/>
+
+-   Agustin Calatroni and I won the 2024 Posit Pharma Table Contest by re-creating an entire CSR with the {gtsummary} package
+
+<img src="images/posit.png" width="280"/>
+
+::::::
+
+:::: {.column width="40%"}
+<img src="images/gtsummary-logo.png" width="650"/>
+
+::::
+:::::::::
 
 
 
