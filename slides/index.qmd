@@ -43,15 +43,15 @@ _How can we have **reproducible** results when there are so many layouts and for
 <!-- 2 -->
 ## Analysis Results Standard (ARS)
 
-A standard for machine-readable statistical results.
-
  - **Goal**: To improve the quality and efficiency of clinical reporting.
  - **Enables**: Automation, Reproducibility, Reusability, and Traceability.
  
-Separates the result from the presentation.
+|
+
+_Separates the result from the presentation_ - maximum flexibility!
 
  - An ARS contains the statistical outcome (e.g., a mean of 25.3).
- - It does not contain display instructions (e.g., font size or cell color). This allows for maximum flexibility.
+ - It does not contain display instructions (e.g., font size or cell color)
  
 <!-- 3 -->
 ## CDISC's Analysis Results Standard (ARS)
@@ -112,7 +112,7 @@ ADSL |>
 <!-- 7 -->
 ## What does an ARD look like?
 
-- It's simple to pass _any_ function to `ard_continuous()` (base R functions, functions from other package, user-defined functions, etc.)
+It's simple to pass _any_ function to `ard_continuous()` (base R functions, functions from other package, user-defined functions, etc.)
 
 ```{r}
 #| message: true
@@ -189,14 +189,18 @@ with {cards} you can easily implement _any_ method.
 ::::::::: columns
 :::::: {.column width="60%"}
 
-::: small
-    -   {gtsummary} is one of the most popular packages for creating summary tables in the R ecosystem
-    -   [1,500,000+ installations]{.emphasis} from CRAN
-    -   1100+ GitHub stars
-    -   300+ contributors
-    -   50+ code contributors
-    -   Won ASA 2021 Innovation in Programming Award and 2024 Posit Pharma Table Contest
-:::
+{gtsummary} is one of the most popular packages for creating summary tables in the R ecosystem:
+
+-   [1,500,000+ installations]{.emphasis} from CRAN
+
+-   1100+ GitHub stars
+
+-   300+ contributors
+
+-   50+ code contributors
+
+-   Won ASA 2021 Innovation in Programming Award and 2024 Posit Pharma Table Contest
+
 ::::::
 
 :::: {.column width="40%"}
@@ -284,10 +288,8 @@ dplyr::filter(pharmaverseadam::adsl, SAFFL == "Y") |>
 
     - QC easy and straightforward.
     - re-purpose easy for different reporting needs.
+    - Automation?
 
-- Even after the table creation, it is possible to produce ARDs for the results, which can be used for future reporting needs.
-
-- Hence, we were able to take advantage of the ARS attributes, such as traceability, re-use, and automation.
 <!-- 17 -->
 ## What we would do differently?
 
