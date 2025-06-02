@@ -130,7 +130,7 @@ ADSL |>
   ard_categorical(
     by = ARM,
     variables = AGEGR1
-  ) 
+  ) |> head(n = 5)
 ```
 
 ::: {.small}
@@ -343,8 +343,7 @@ dplyr::filter(pharmaverseadam::adsl, SAFFL == "Y") |>
 :::
 
 ::: {.v-center-container}
-<!-- Pfizer+Eli Lilly  -->
-<!-- ![](images/coauthors.png) -->
+![](images/collaboration_updated.png)
 
 :::
 
