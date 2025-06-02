@@ -91,18 +91,11 @@
     "text": "{cardx}\n\nExports ARD frameworks for statistical analyses from many packages\n\n\n  - {stats}\n  - {car}\n  - {effectsize}\n  - {emmeans}\n  - {geepack}\n  - {lme4}\n  - {parameters}\n  - {smd}\n  - {survey}\n  - {survival}\n\n\nThis list is growing (rather quickly) 🌱\n\n\n\n{cards} provides a general framework to easily implement any method. {cardx} provides a nicer user experience for common methods."
   },
   {
-    "objectID": "slides/index.html#section",
-    "href": "slides/index.html#section",
+    "objectID": "slides/index.html#ards-can-be-used-by-gtsummary-for-tables",
+    "href": "slides/index.html#ards-can-be-used-by-gtsummary-for-tables",
     "title": "Supercharging Statistical Analysis with ARDs and the {cards} R Package",
-    "section": "",
-    "text": "How {gtsummary} started\n\n\nBegan to address reproducible issues while working in academia\nGoal was to build a package to summarize study results with code that was both simple and customizable\nFirst released in May 2019\n\n\n\nHow it’s going\n\n\nThe stats\n\n1,500,000+ installations from CRAN\n1100+ GitHub stars\n300+ contributors\n50+ code contributors"
-  },
-  {
-    "objectID": "slides/index.html#section-1",
-    "href": "slides/index.html#section-1",
-    "title": "Supercharging Statistical Analysis with ARDs and the {cards} R Package",
-    "section": "",
-    "text": "Won the 2021 American Statistical Association (ASA) Innovation in Programming Award\n\n\n\nAgustin Calatroni and I won the 2024 Posit Pharma Table Contest by re-creating an entire CSR with the {gtsummary} package"
+    "section": "ARDs can be used by {gtsummary} for tables!",
+    "text": "ARDs can be used by {gtsummary} for tables!\n\n\n\n\nSome stats\n\n1,500,000+ installations from CRAN\n1100+ GitHub stars\n300+ contributors\n50+ code contributors\nWon ASA 2021 Innovation in Programming Award and 2024 Posit Pharma Table Contest"
   },
   {
     "objectID": "slides/index.html#gtsummary-runs-on-ards",
@@ -161,11 +154,18 @@
     "text": "What we would do differently?\n\nThe full ARS model is metadata driven. This also means the metadata dictate the precise layout of the tables.\nWe preferred to write an R script than metadata files.\n\nIf a trial only reported “standard” tables, it would be much less of an issue to specify detailed metadata for layouts. But every trial has many bespoke tables not part of a standard library."
   },
   {
-    "objectID": "slides/index.html#section-2",
-    "href": "slides/index.html#section-2",
+    "objectID": "slides/index.html#section",
+    "href": "slides/index.html#section",
     "title": "Supercharging Statistical Analysis with ARDs and the {cards} R Package",
     "section": "",
     "text": "🕺🕺 ARD Team 🕺🕺"
+  },
+  {
+    "objectID": "slides/index.html#section-1",
+    "href": "slides/index.html#section-1",
+    "title": "Supercharging Statistical Analysis with ARDs and the {cards} R Package",
+    "section": "",
+    "text": "Won the 2021 American Statistical Association (ASA) Innovation in Programming Award\n\n\n\nAgustin Calatroni and I won the 2024 Posit Pharma Table Contest by re-creating an entire CSR with the {gtsummary} package"
   },
   {
     "objectID": "slides/index.html#ards-uses-outside-of-the-ars",
@@ -268,7 +268,7 @@
     "href": "index.html#biography",
     "title": "Supercharging Statistical Analysis with ARDs and the {cards} R Package",
     "section": "Biography",
-    "text": "Biography\n\nBecca Krouse is a data scientist in GSK’s Statistics and Data Science Innovation Hub. A biostatistician by training, she has experience spanning 14+ years in the field of clinical research and specializes in developing R-based tools.\n\nDavide Garolini (he/his) is a Statistical Engineer with an M.Phys. in Biophysics and a Ph.D. in Computational Neuroscience, has over ten years of R programming and package development expertise, specializing in clinical data analysis and regulatory deliveries. He significantly contributes by improving key tools like {rtables}, {tern}, and {gtsummary} for regulatory compliance. Davide strongly advocates for open-source collaboration, promoting advancements in clinical research.",
+    "text": "Biography\n\nBecca Krouse is a data scientist in GSK’s Statistics and Data Science Innovation Hub. A biostatistician by training, she has experience spanning 14+ years in the field of clinical research and specializes in developing R-based tools.\n\n\nDavide Garolini (he/his) is a Statistical Engineer with an M.Phys. in Biophysics and a Ph.D. in Computational Neuroscience, has over ten years of R programming and package development expertise, specializing in clinical data analysis and regulatory deliveries. He significantly contributes by improving key tools like {rtables}, {tern}, and {gtsummary} for regulatory compliance. Davide strongly advocates for open-source collaboration, promoting advancements in clinical research.",
     "crumbs": [
       "Home"
     ]
