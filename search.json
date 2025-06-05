@@ -267,6 +267,13 @@
     ]
   },
   {
+    "objectID": "AI_summary.html",
+    "href": "AI_summary.html",
+    "title": "AI summary: Enhancing Statistical Analysis with ARDs and {cards}",
+    "section": "",
+    "text": "Davide introduced {cards} for enhancing statistical analysis using ARDs, which ensure reproducible results using the ADAM standard and separate results from presentation. {cards} and {gtsummary}, both part of the pharmaverse, create analysis results from ARDs metadata and tabulation, respectively. {cards} has wide adoption, and {cardx} extends its functionality. {gtsummary} now integrates with ARDs, enabling an ARD-first table creation approach, shown through a demographic example. A pilot study successfully reproduced clinical trial summary tables with these tools, highlighting their ease of adoption, quality control, and automation potential. However, fully metadata-driven ARS models can be cumbersome for non-standard tables, where scripts might be preferred. The ARDs team, led by Roche, was thanked, and attendees were directed to the project website for resources and a workshop.\n\nMade with Gemini"
+  },
+  {
     "objectID": "license.html",
     "href": "license.html",
     "title": "License",
