@@ -31,6 +31,8 @@ website:
     contents:
      - href: index.qmd
        text: Home
+     - href: AI_summary.qmd
+       text: AI summary
      - href: license.qmd
 
 format:
